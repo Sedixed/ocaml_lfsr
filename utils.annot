@@ -1,0 +1,1349 @@
+"projet_cs/utils.ml" 11 517 521 "projet_cs/utils.ml" 11 517 527
+type(
+  int list -> int
+)
+ident(
+  def degree "projet_cs/utils.ml" 14 640 640 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 11 517 528 "projet_cs/utils.ml" 11 517 529
+type(
+  int list
+)
+ident(
+  def p "projet_cs/utils.ml" 11 517 532 "projet_cs/utils.ml" 11 517 575
+)
+"projet_cs/utils.ml" 11 517 535 "projet_cs/utils.ml" 11 517 536
+type(
+  int list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 11 517 528 "projet_cs/utils.ml" 11 517 529
+)
+"projet_cs/utils.ml" 11 517 537 "projet_cs/utils.ml" 11 517 538
+type(
+  int list -> int list -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"projet_cs/utils.ml" 11 517 539 "projet_cs/utils.ml" 11 517 541
+type(
+  int list
+)
+"projet_cs/utils.ml" 11 517 535 "projet_cs/utils.ml" 11 517 541
+type(
+  bool
+)
+"projet_cs/utils.ml" 11 517 547 "projet_cs/utils.ml" 11 517 549
+type(
+  int
+)
+"projet_cs/utils.ml" 11 517 555 "projet_cs/utils.ml" 11 517 562
+type(
+  int list -> int
+)
+ident(
+  int_ref Stdlib.List.hd "list.mli" 54 2437 2437 "list.mli" 54 2437 2459
+)
+"projet_cs/utils.ml" 11 517 564 "projet_cs/utils.ml" 11 517 572
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3172 3172 "list.mli" 76 3172 3200
+)
+"projet_cs/utils.ml" 11 517 573 "projet_cs/utils.ml" 11 517 574
+type(
+  int list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 11 517 528 "projet_cs/utils.ml" 11 517 529
+)
+"projet_cs/utils.ml" 11 517 563 "projet_cs/utils.ml" 11 517 575
+type(
+  int list
+)
+"projet_cs/utils.ml" 11 517 555 "projet_cs/utils.ml" 11 517 575
+type(
+  int
+)
+"projet_cs/utils.ml" 11 517 532 "projet_cs/utils.ml" 11 517 575
+type(
+  int
+)
+"projet_cs/utils.ml" 14 640 644 "projet_cs/utils.ml" 14 640 657
+type(
+  'a list -> 'a -> bool
+)
+ident(
+  def is_element_at "projet_cs/utils.ml" 22 854 854 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 14 640 658 "projet_cs/utils.ml" 14 640 662
+type(
+  'a list
+)
+ident(
+  def poly "projet_cs/utils.ml" 14 640 663 "projet_cs/utils.ml" 19 772 786
+)
+"projet_cs/utils.ml" 14 640 663 "projet_cs/utils.ml" 14 640 664
+type(
+  'a
+)
+ident(
+  def i "projet_cs/utils.ml" 15 668 669 "projet_cs/utils.ml" 19 772 786
+)
+"projet_cs/utils.ml" 15 668 677 "projet_cs/utils.ml" 15 668 680
+type(
+  'b -> 'b list -> bool
+)
+ident(
+  def aux "projet_cs/utils.ml" 15 668 669 "projet_cs/utils.ml" 19 772 786
+)
+"projet_cs/utils.ml" 15 668 681 "projet_cs/utils.ml" 15 668 682
+type(
+  'b
+)
+ident(
+  def i "projet_cs/utils.ml" 15 668 683 "projet_cs/utils.ml" 18 725 771
+)
+"projet_cs/utils.ml" 15 668 683 "projet_cs/utils.ml" 15 668 687
+type(
+  'b list
+)
+ident(
+  def poly "projet_cs/utils.ml" 16 690 692 "projet_cs/utils.ml" 18 725 771
+)
+"projet_cs/utils.ml" 16 690 698 "projet_cs/utils.ml" 16 690 702
+type(
+  'b list
+)
+ident(
+  int_ref poly "projet_cs/utils.ml" 15 668 683 "projet_cs/utils.ml" 15 668 687
+)
+"projet_cs/utils.ml" 17 708 713 "projet_cs/utils.ml" 17 708 715
+type(
+  'b list
+)
+type(
+  'b list
+)
+"projet_cs/utils.ml" 17 708 719 "projet_cs/utils.ml" 17 708 724
+type(
+  bool
+)
+"projet_cs/utils.ml" 18 725 730 "projet_cs/utils.ml" 18 725 731
+type(
+  'b
+)
+ident(
+  def h "projet_cs/utils.ml" 18 725 740 "projet_cs/utils.ml" 18 725 771
+)
+"projet_cs/utils.ml" 18 725 735 "projet_cs/utils.ml" 18 725 736
+type(
+  'b list
+)
+ident(
+  def t "projet_cs/utils.ml" 18 725 740 "projet_cs/utils.ml" 18 725 771
+)
+"projet_cs/utils.ml" 18 725 730 "projet_cs/utils.ml" 18 725 736
+type(
+  'b list
+)
+type(
+  'b list
+)
+"projet_cs/utils.ml" 18 725 743 "projet_cs/utils.ml" 18 725 744
+type(
+  'b
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 15 668 681 "projet_cs/utils.ml" 15 668 682
+)
+"projet_cs/utils.ml" 18 725 745 "projet_cs/utils.ml" 18 725 746
+type(
+  'b -> 'b -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"projet_cs/utils.ml" 18 725 747 "projet_cs/utils.ml" 18 725 748
+type(
+  'b
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 18 725 730 "projet_cs/utils.ml" 18 725 731
+)
+"projet_cs/utils.ml" 18 725 743 "projet_cs/utils.ml" 18 725 748
+type(
+  bool
+)
+"projet_cs/utils.ml" 18 725 754 "projet_cs/utils.ml" 18 725 758
+type(
+  bool
+)
+"projet_cs/utils.ml" 18 725 764 "projet_cs/utils.ml" 18 725 767
+type(
+  'b -> 'b list -> bool
+)
+ident(
+  int_ref aux "projet_cs/utils.ml" 15 668 677 "projet_cs/utils.ml" 15 668 680
+)
+"projet_cs/utils.ml" 18 725 768 "projet_cs/utils.ml" 18 725 769
+type(
+  'b
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 15 668 681 "projet_cs/utils.ml" 15 668 682
+)
+"projet_cs/utils.ml" 18 725 770 "projet_cs/utils.ml" 18 725 771
+type(
+  'b list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 18 725 735 "projet_cs/utils.ml" 18 725 736
+)
+"projet_cs/utils.ml" 18 725 764 "projet_cs/utils.ml" 18 725 771
+type(
+  bool
+)
+"projet_cs/utils.ml" 18 725 740 "projet_cs/utils.ml" 18 725 771
+type(
+  bool
+)
+"projet_cs/utils.ml" 16 690 692 "projet_cs/utils.ml" 18 725 771
+type(
+  bool
+)
+"projet_cs/utils.ml" 19 772 776 "projet_cs/utils.ml" 19 772 779
+type(
+  'a -> 'a list -> bool
+)
+ident(
+  int_ref aux "projet_cs/utils.ml" 15 668 677 "projet_cs/utils.ml" 15 668 680
+)
+"projet_cs/utils.ml" 19 772 780 "projet_cs/utils.ml" 19 772 781
+type(
+  'a
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 14 640 663 "projet_cs/utils.ml" 14 640 664
+)
+"projet_cs/utils.ml" 19 772 782 "projet_cs/utils.ml" 19 772 786
+type(
+  'a list
+)
+ident(
+  int_ref poly "projet_cs/utils.ml" 14 640 658 "projet_cs/utils.ml" 14 640 662
+)
+"projet_cs/utils.ml" 19 772 776 "projet_cs/utils.ml" 19 772 786
+type(
+  bool
+)
+"projet_cs/utils.ml" 15 668 669 "projet_cs/utils.ml" 19 772 786
+type(
+  bool
+)
+"projet_cs/utils.ml" 22 854 858 "projet_cs/utils.ml" 22 854 868
+type(
+  'a list -> int -> 'a list
+)
+ident(
+  def mult_coeff "projet_cs/utils.ml" 25 951 951 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 22 854 869 "projet_cs/utils.ml" 22 854 870
+type(
+  'a list
+)
+ident(
+  def p "projet_cs/utils.ml" 22 854 871 "projet_cs/utils.ml" 22 854 904
+)
+"projet_cs/utils.ml" 22 854 871 "projet_cs/utils.ml" 22 854 872
+type(
+  int
+)
+ident(
+  def a "projet_cs/utils.ml" 22 854 875 "projet_cs/utils.ml" 22 854 904
+)
+"projet_cs/utils.ml" 22 854 878 "projet_cs/utils.ml" 22 854 879
+type(
+  int
+)
+ident(
+  int_ref a "projet_cs/utils.ml" 22 854 871 "projet_cs/utils.ml" 22 854 872
+)
+"projet_cs/utils.ml" 22 854 880 "projet_cs/utils.ml" 22 854 883
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( mod ) "stdlib.mli" 367 14359 14359 "stdlib.mli" 367 14359 14407
+)
+"projet_cs/utils.ml" 22 854 884 "projet_cs/utils.ml" 22 854 885
+type(
+  int
+)
+"projet_cs/utils.ml" 22 854 878 "projet_cs/utils.ml" 22 854 885
+type(
+  int
+)
+"projet_cs/utils.ml" 22 854 886 "projet_cs/utils.ml" 22 854 887
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 121 5051 5051 "stdlib.mli" 121 5051 5095
+)
+"projet_cs/utils.ml" 22 854 888 "projet_cs/utils.ml" 22 854 889
+type(
+  int
+)
+"projet_cs/utils.ml" 22 854 878 "projet_cs/utils.ml" 22 854 889
+type(
+  bool
+)
+"projet_cs/utils.ml" 22 854 895 "projet_cs/utils.ml" 22 854 897
+type(
+  'a list
+)
+"projet_cs/utils.ml" 22 854 903 "projet_cs/utils.ml" 22 854 904
+type(
+  'a list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 22 854 869 "projet_cs/utils.ml" 22 854 870
+)
+"projet_cs/utils.ml" 22 854 875 "projet_cs/utils.ml" 22 854 904
+type(
+  'a list
+)
+"projet_cs/utils.ml" 25 951 955 "projet_cs/utils.ml" 25 951 961
+type(
+  int list -> int -> int list
+)
+ident(
+  def multXn "projet_cs/utils.ml" 32 1177 1177 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 25 951 962 "projet_cs/utils.ml" 25 951 963
+type(
+  int list
+)
+ident(
+  def p "projet_cs/utils.ml" 25 951 964 "projet_cs/utils.ml" 29 1073 1094
+)
+"projet_cs/utils.ml" 25 951 964 "projet_cs/utils.ml" 25 951 965
+type(
+  int
+)
+ident(
+  def n "projet_cs/utils.ml" 26 968 969 "projet_cs/utils.ml" 29 1073 1094
+)
+"projet_cs/utils.ml" 26 968 977 "projet_cs/utils.ml" 26 968 987
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  def multXn_aux "projet_cs/utils.ml" 26 968 969 "projet_cs/utils.ml" 29 1073 1094
+)
+"projet_cs/utils.ml" 26 968 988 "projet_cs/utils.ml" 26 968 989
+type(
+  int
+)
+ident(
+  def n "projet_cs/utils.ml" 26 968 990 "projet_cs/utils.ml" 28 1028 1072
+)
+"projet_cs/utils.ml" 26 968 990 "projet_cs/utils.ml" 26 968 993
+type(
+  int list
+)
+ident(
+  def aux "projet_cs/utils.ml" 26 968 996 "projet_cs/utils.ml" 28 1028 1072
+)
+"projet_cs/utils.ml" 27 1005 1009 "projet_cs/utils.ml" 27 1005 1011
+type(
+  int list
+)
+"projet_cs/utils.ml" 27 1005 1015 "projet_cs/utils.ml" 27 1005 1023
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3172 3172 "list.mli" 76 3172 3200
+)
+"projet_cs/utils.ml" 27 1005 1024 "projet_cs/utils.ml" 27 1005 1027
+type(
+  int list
+)
+ident(
+  int_ref aux "projet_cs/utils.ml" 26 968 990 "projet_cs/utils.ml" 26 968 993
+)
+"projet_cs/utils.ml" 27 1005 1015 "projet_cs/utils.ml" 27 1005 1027
+type(
+  int list
+)
+"projet_cs/utils.ml" 28 1028 1032 "projet_cs/utils.ml" 28 1028 1033
+type(
+  int
+)
+ident(
+  def h "projet_cs/utils.ml" 28 1028 1042 "projet_cs/utils.ml" 28 1028 1072
+)
+"projet_cs/utils.ml" 28 1028 1037 "projet_cs/utils.ml" 28 1028 1038
+type(
+  int list
+)
+ident(
+  def t "projet_cs/utils.ml" 28 1028 1042 "projet_cs/utils.ml" 28 1028 1072
+)
+"projet_cs/utils.ml" 28 1028 1032 "projet_cs/utils.ml" 28 1028 1038
+type(
+  int list
+)
+"projet_cs/utils.ml" 28 1028 1042 "projet_cs/utils.ml" 28 1028 1052
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  int_ref multXn_aux "projet_cs/utils.ml" 26 968 977 "projet_cs/utils.ml" 26 968 987
+)
+"projet_cs/utils.ml" 28 1028 1053 "projet_cs/utils.ml" 28 1028 1054
+type(
+  int
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 26 968 988 "projet_cs/utils.ml" 26 968 989
+)
+"projet_cs/utils.ml" 28 1028 1057 "projet_cs/utils.ml" 28 1028 1058
+type(
+  int
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 28 1028 1032 "projet_cs/utils.ml" 28 1028 1033
+)
+"projet_cs/utils.ml" 28 1028 1059 "projet_cs/utils.ml" 28 1028 1060
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 341 13435 13435 "stdlib.mli" 341 13435 13481
+)
+"projet_cs/utils.ml" 28 1028 1061 "projet_cs/utils.ml" 28 1028 1062
+type(
+  int
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 26 968 988 "projet_cs/utils.ml" 26 968 989
+)
+"projet_cs/utils.ml" 28 1028 1056 "projet_cs/utils.ml" 28 1028 1063
+type(
+  int
+)
+"projet_cs/utils.ml" 28 1028 1066 "projet_cs/utils.ml" 28 1028 1069
+type(
+  int list
+)
+ident(
+  int_ref aux "projet_cs/utils.ml" 26 968 990 "projet_cs/utils.ml" 26 968 993
+)
+"projet_cs/utils.ml" 28 1028 1055 "projet_cs/utils.ml" 28 1028 1070
+type(
+  int list
+)
+"projet_cs/utils.ml" 28 1028 1071 "projet_cs/utils.ml" 28 1028 1072
+type(
+  int list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 28 1028 1037 "projet_cs/utils.ml" 28 1028 1038
+)
+"projet_cs/utils.ml" 28 1028 1042 "projet_cs/utils.ml" 28 1028 1072
+type(
+  int list
+)
+"projet_cs/utils.ml" 26 968 996 "projet_cs/utils.ml" 28 1028 1072
+type(
+  int list -> int list
+)
+"projet_cs/utils.ml" 29 1073 1077 "projet_cs/utils.ml" 29 1073 1087
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  int_ref multXn_aux "projet_cs/utils.ml" 26 968 977 "projet_cs/utils.ml" 26 968 987
+)
+"projet_cs/utils.ml" 29 1073 1088 "projet_cs/utils.ml" 29 1073 1089
+type(
+  int
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 25 951 964 "projet_cs/utils.ml" 25 951 965
+)
+"projet_cs/utils.ml" 29 1073 1090 "projet_cs/utils.ml" 29 1073 1092
+type(
+  int list
+)
+"projet_cs/utils.ml" 29 1073 1093 "projet_cs/utils.ml" 29 1073 1094
+type(
+  int list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 25 951 962 "projet_cs/utils.ml" 25 951 963
+)
+"projet_cs/utils.ml" 29 1073 1077 "projet_cs/utils.ml" 29 1073 1094
+type(
+  int list
+)
+"projet_cs/utils.ml" 26 968 969 "projet_cs/utils.ml" 29 1073 1094
+type(
+  int list
+)
+"projet_cs/utils.ml" 32 1177 1181 "projet_cs/utils.ml" 32 1177 1184
+type(
+  int list -> int -> int list * int list
+)
+ident(
+  def cut "projet_cs/utils.ml" 42 1457 1457 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 32 1177 1185 "projet_cs/utils.ml" 32 1177 1186
+type(
+  int list
+)
+ident(
+  def p "projet_cs/utils.ml" 32 1177 1187 "projet_cs/utils.ml" 39 1382 1403
+)
+"projet_cs/utils.ml" 32 1177 1187 "projet_cs/utils.ml" 32 1177 1188
+type(
+  int
+)
+ident(
+  def i "projet_cs/utils.ml" 33 1191 1192 "projet_cs/utils.ml" 39 1382 1403
+)
+"projet_cs/utils.ml" 33 1191 1200 "projet_cs/utils.ml" 33 1191 1207
+type(
+  int list -> int list -> int -> int list -> int list * int list
+)
+ident(
+  def cut_aux "projet_cs/utils.ml" 33 1191 1192 "projet_cs/utils.ml" 39 1382 1403
+)
+"projet_cs/utils.ml" 33 1191 1208 "projet_cs/utils.ml" 33 1191 1210
+type(
+  int list
+)
+ident(
+  def p0 "projet_cs/utils.ml" 33 1191 1211 "projet_cs/utils.ml" 38 1342 1381
+)
+"projet_cs/utils.ml" 33 1191 1211 "projet_cs/utils.ml" 33 1191 1213
+type(
+  int list
+)
+ident(
+  def p1 "projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 38 1342 1381
+)
+"projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 33 1191 1215
+type(
+  int
+)
+ident(
+  def i "projet_cs/utils.ml" 33 1191 1218 "projet_cs/utils.ml" 38 1342 1381
+)
+"projet_cs/utils.ml" 34 1227 1231 "projet_cs/utils.ml" 34 1227 1233
+type(
+  int list
+)
+"projet_cs/utils.ml" 34 1227 1238 "projet_cs/utils.ml" 34 1227 1246
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3172 3172 "list.mli" 76 3172 3200
+)
+"projet_cs/utils.ml" 34 1227 1247 "projet_cs/utils.ml" 34 1227 1249
+type(
+  int list
+)
+ident(
+  int_ref p0 "projet_cs/utils.ml" 33 1191 1208 "projet_cs/utils.ml" 33 1191 1210
+)
+"projet_cs/utils.ml" 34 1227 1238 "projet_cs/utils.ml" 34 1227 1249
+type(
+  int list
+)
+"projet_cs/utils.ml" 34 1227 1251 "projet_cs/utils.ml" 34 1227 1259
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3172 3172 "list.mli" 76 3172 3200
+)
+"projet_cs/utils.ml" 34 1227 1260 "projet_cs/utils.ml" 34 1227 1262
+type(
+  int list
+)
+ident(
+  int_ref p1 "projet_cs/utils.ml" 33 1191 1211 "projet_cs/utils.ml" 33 1191 1213
+)
+"projet_cs/utils.ml" 34 1227 1251 "projet_cs/utils.ml" 34 1227 1262
+type(
+  int list
+)
+"projet_cs/utils.ml" 34 1227 1237 "projet_cs/utils.ml" 34 1227 1263
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 35 1264 1268 "projet_cs/utils.ml" 35 1264 1269
+type(
+  int
+)
+ident(
+  def h "projet_cs/utils.ml" 35 1264 1278 "projet_cs/utils.ml" 38 1342 1381
+)
+"projet_cs/utils.ml" 35 1264 1273 "projet_cs/utils.ml" 35 1264 1274
+type(
+  int list
+)
+ident(
+  def t "projet_cs/utils.ml" 35 1264 1278 "projet_cs/utils.ml" 38 1342 1381
+)
+"projet_cs/utils.ml" 35 1264 1268 "projet_cs/utils.ml" 35 1264 1274
+type(
+  int list
+)
+"projet_cs/utils.ml" 35 1264 1281 "projet_cs/utils.ml" 35 1264 1282
+type(
+  int
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 35 1264 1268 "projet_cs/utils.ml" 35 1264 1269
+)
+"projet_cs/utils.ml" 35 1264 1283 "projet_cs/utils.ml" 35 1264 1284
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"projet_cs/utils.ml" 35 1264 1285 "projet_cs/utils.ml" 35 1264 1286
+type(
+  int
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 33 1191 1215
+)
+"projet_cs/utils.ml" 35 1264 1281 "projet_cs/utils.ml" 35 1264 1286
+type(
+  bool
+)
+"projet_cs/utils.ml" 36 1293 1302 "projet_cs/utils.ml" 36 1293 1309
+type(
+  int list -> int list -> int -> int list -> int list * int list
+)
+ident(
+  int_ref cut_aux "projet_cs/utils.ml" 33 1191 1200 "projet_cs/utils.ml" 33 1191 1207
+)
+"projet_cs/utils.ml" 36 1293 1311 "projet_cs/utils.ml" 36 1293 1312
+type(
+  int
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 35 1264 1268 "projet_cs/utils.ml" 35 1264 1269
+)
+"projet_cs/utils.ml" 36 1293 1316 "projet_cs/utils.ml" 36 1293 1318
+type(
+  int list
+)
+ident(
+  int_ref p0 "projet_cs/utils.ml" 33 1191 1208 "projet_cs/utils.ml" 33 1191 1210
+)
+"projet_cs/utils.ml" 36 1293 1310 "projet_cs/utils.ml" 36 1293 1319
+type(
+  int list
+)
+"projet_cs/utils.ml" 36 1293 1320 "projet_cs/utils.ml" 36 1293 1322
+type(
+  int list
+)
+ident(
+  int_ref p1 "projet_cs/utils.ml" 33 1191 1211 "projet_cs/utils.ml" 33 1191 1213
+)
+"projet_cs/utils.ml" 36 1293 1323 "projet_cs/utils.ml" 36 1293 1324
+type(
+  int
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 33 1191 1215
+)
+"projet_cs/utils.ml" 36 1293 1325 "projet_cs/utils.ml" 36 1293 1326
+type(
+  int list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 35 1264 1273 "projet_cs/utils.ml" 35 1264 1274
+)
+"projet_cs/utils.ml" 36 1293 1302 "projet_cs/utils.ml" 36 1293 1326
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 38 1342 1351 "projet_cs/utils.ml" 38 1342 1358
+type(
+  int list -> int list -> int -> int list -> int list * int list
+)
+ident(
+  int_ref cut_aux "projet_cs/utils.ml" 33 1191 1200 "projet_cs/utils.ml" 33 1191 1207
+)
+"projet_cs/utils.ml" 38 1342 1359 "projet_cs/utils.ml" 38 1342 1361
+type(
+  int list
+)
+ident(
+  int_ref p0 "projet_cs/utils.ml" 33 1191 1208 "projet_cs/utils.ml" 33 1191 1210
+)
+"projet_cs/utils.ml" 38 1342 1364 "projet_cs/utils.ml" 38 1342 1365
+type(
+  int
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 35 1264 1268 "projet_cs/utils.ml" 35 1264 1269
+)
+"projet_cs/utils.ml" 38 1342 1366 "projet_cs/utils.ml" 38 1342 1367
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 346 13584 13584 "stdlib.mli" 346 13584 13630
+)
+"projet_cs/utils.ml" 38 1342 1368 "projet_cs/utils.ml" 38 1342 1369
+type(
+  int
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 33 1191 1215
+)
+"projet_cs/utils.ml" 38 1342 1363 "projet_cs/utils.ml" 38 1342 1370
+type(
+  int
+)
+"projet_cs/utils.ml" 38 1342 1374 "projet_cs/utils.ml" 38 1342 1376
+type(
+  int list
+)
+ident(
+  int_ref p1 "projet_cs/utils.ml" 33 1191 1211 "projet_cs/utils.ml" 33 1191 1213
+)
+"projet_cs/utils.ml" 38 1342 1362 "projet_cs/utils.ml" 38 1342 1377
+type(
+  int list
+)
+"projet_cs/utils.ml" 38 1342 1378 "projet_cs/utils.ml" 38 1342 1379
+type(
+  int
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 33 1191 1214 "projet_cs/utils.ml" 33 1191 1215
+)
+"projet_cs/utils.ml" 38 1342 1380 "projet_cs/utils.ml" 38 1342 1381
+type(
+  int list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 35 1264 1273 "projet_cs/utils.ml" 35 1264 1274
+)
+"projet_cs/utils.ml" 38 1342 1351 "projet_cs/utils.ml" 38 1342 1381
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 35 1264 1278 "projet_cs/utils.ml" 38 1342 1381
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 33 1191 1218 "projet_cs/utils.ml" 38 1342 1381
+type(
+  int list -> int list * int list
+)
+"projet_cs/utils.ml" 39 1382 1386 "projet_cs/utils.ml" 39 1382 1393
+type(
+  int list -> int list -> int -> int list -> int list * int list
+)
+ident(
+  int_ref cut_aux "projet_cs/utils.ml" 33 1191 1200 "projet_cs/utils.ml" 33 1191 1207
+)
+"projet_cs/utils.ml" 39 1382 1394 "projet_cs/utils.ml" 39 1382 1396
+type(
+  int list
+)
+"projet_cs/utils.ml" 39 1382 1397 "projet_cs/utils.ml" 39 1382 1399
+type(
+  int list
+)
+"projet_cs/utils.ml" 39 1382 1400 "projet_cs/utils.ml" 39 1382 1401
+type(
+  int
+)
+ident(
+  int_ref i "projet_cs/utils.ml" 32 1177 1187 "projet_cs/utils.ml" 32 1177 1188
+)
+"projet_cs/utils.ml" 39 1382 1402 "projet_cs/utils.ml" 39 1382 1403
+type(
+  int list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 32 1177 1185 "projet_cs/utils.ml" 32 1177 1186
+)
+"projet_cs/utils.ml" 39 1382 1386 "projet_cs/utils.ml" 39 1382 1403
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 33 1191 1192 "projet_cs/utils.ml" 39 1382 1403
+type(
+  int list * int list
+)
+"projet_cs/utils.ml" 42 1457 1461 "projet_cs/utils.ml" 42 1457 1469
+type(
+  int list -> int -> int list
+)
+ident(
+  def renverse "projet_cs/utils.ml" 49 1635 1635 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 42 1457 1470 "projet_cs/utils.ml" 42 1457 1471
+type(
+  int list
+)
+ident(
+  def p "projet_cs/utils.ml" 42 1457 1472 "projet_cs/utils.ml" 46 1573 1592
+)
+"projet_cs/utils.ml" 42 1457 1472 "projet_cs/utils.ml" 42 1457 1473
+type(
+  int
+)
+ident(
+  def k "projet_cs/utils.ml" 43 1476 1477 "projet_cs/utils.ml" 46 1573 1592
+)
+"projet_cs/utils.ml" 43 1476 1485 "projet_cs/utils.ml" 43 1476 1493
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  def renv_aux "projet_cs/utils.ml" 43 1476 1477 "projet_cs/utils.ml" 46 1573 1592
+)
+"projet_cs/utils.ml" 43 1476 1494 "projet_cs/utils.ml" 43 1476 1495
+type(
+  int
+)
+ident(
+  def k "projet_cs/utils.ml" 43 1476 1496 "projet_cs/utils.ml" 45 1534 1572
+)
+"projet_cs/utils.ml" 43 1476 1496 "projet_cs/utils.ml" 43 1476 1499
+type(
+  int list
+)
+ident(
+  def acc "projet_cs/utils.ml" 43 1476 1502 "projet_cs/utils.ml" 45 1534 1572
+)
+"projet_cs/utils.ml" 44 1511 1515 "projet_cs/utils.ml" 44 1511 1517
+type(
+  int list
+)
+"projet_cs/utils.ml" 44 1511 1521 "projet_cs/utils.ml" 44 1511 1527
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref multXn "projet_cs/utils.ml" 25 951 955 "projet_cs/utils.ml" 25 951 961
+)
+"projet_cs/utils.ml" 44 1511 1528 "projet_cs/utils.ml" 44 1511 1531
+type(
+  int list
+)
+ident(
+  int_ref acc "projet_cs/utils.ml" 43 1476 1496 "projet_cs/utils.ml" 43 1476 1499
+)
+"projet_cs/utils.ml" 44 1511 1532 "projet_cs/utils.ml" 44 1511 1533
+type(
+  int
+)
+ident(
+  int_ref k "projet_cs/utils.ml" 43 1476 1494 "projet_cs/utils.ml" 43 1476 1495
+)
+"projet_cs/utils.ml" 44 1511 1521 "projet_cs/utils.ml" 44 1511 1533
+type(
+  int list
+)
+"projet_cs/utils.ml" 45 1534 1538 "projet_cs/utils.ml" 45 1534 1539
+type(
+  int
+)
+ident(
+  def h "projet_cs/utils.ml" 45 1534 1548 "projet_cs/utils.ml" 45 1534 1572
+)
+"projet_cs/utils.ml" 45 1534 1543 "projet_cs/utils.ml" 45 1534 1544
+type(
+  int list
+)
+ident(
+  def t "projet_cs/utils.ml" 45 1534 1548 "projet_cs/utils.ml" 45 1534 1572
+)
+"projet_cs/utils.ml" 45 1534 1538 "projet_cs/utils.ml" 45 1534 1544
+type(
+  int list
+)
+"projet_cs/utils.ml" 45 1534 1548 "projet_cs/utils.ml" 45 1534 1556
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  int_ref renv_aux "projet_cs/utils.ml" 43 1476 1485 "projet_cs/utils.ml" 43 1476 1493
+)
+"projet_cs/utils.ml" 45 1534 1557 "projet_cs/utils.ml" 45 1534 1558
+type(
+  int
+)
+ident(
+  int_ref k "projet_cs/utils.ml" 43 1476 1494 "projet_cs/utils.ml" 43 1476 1495
+)
+"projet_cs/utils.ml" 45 1534 1560 "projet_cs/utils.ml" 45 1534 1561
+type(
+  int -> int
+)
+ident(
+  int_ref Stdlib.( ~- ) "stdlib.mli" 323 12928 12928 "stdlib.mli" 323 12928 12968
+)
+"projet_cs/utils.ml" 45 1534 1561 "projet_cs/utils.ml" 45 1534 1562
+type(
+  int
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 45 1534 1538 "projet_cs/utils.ml" 45 1534 1539
+)
+"projet_cs/utils.ml" 45 1534 1560 "projet_cs/utils.ml" 45 1534 1562
+type(
+  int
+)
+"projet_cs/utils.ml" 45 1534 1566 "projet_cs/utils.ml" 45 1534 1569
+type(
+  int list
+)
+ident(
+  int_ref acc "projet_cs/utils.ml" 43 1476 1496 "projet_cs/utils.ml" 43 1476 1499
+)
+"projet_cs/utils.ml" 45 1534 1559 "projet_cs/utils.ml" 45 1534 1570
+type(
+  int list
+)
+"projet_cs/utils.ml" 45 1534 1571 "projet_cs/utils.ml" 45 1534 1572
+type(
+  int list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 45 1534 1543 "projet_cs/utils.ml" 45 1534 1544
+)
+"projet_cs/utils.ml" 45 1534 1548 "projet_cs/utils.ml" 45 1534 1572
+type(
+  int list
+)
+"projet_cs/utils.ml" 43 1476 1502 "projet_cs/utils.ml" 45 1534 1572
+type(
+  int list -> int list
+)
+"projet_cs/utils.ml" 46 1573 1577 "projet_cs/utils.ml" 46 1573 1585
+type(
+  int -> int list -> int list -> int list
+)
+ident(
+  int_ref renv_aux "projet_cs/utils.ml" 43 1476 1485 "projet_cs/utils.ml" 43 1476 1493
+)
+"projet_cs/utils.ml" 46 1573 1586 "projet_cs/utils.ml" 46 1573 1587
+type(
+  int
+)
+ident(
+  int_ref k "projet_cs/utils.ml" 42 1457 1472 "projet_cs/utils.ml" 42 1457 1473
+)
+"projet_cs/utils.ml" 46 1573 1588 "projet_cs/utils.ml" 46 1573 1590
+type(
+  int list
+)
+"projet_cs/utils.ml" 46 1573 1591 "projet_cs/utils.ml" 46 1573 1592
+type(
+  int list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 42 1457 1470 "projet_cs/utils.ml" 42 1457 1471
+)
+"projet_cs/utils.ml" 46 1573 1577 "projet_cs/utils.ml" 46 1573 1592
+type(
+  int list
+)
+"projet_cs/utils.ml" 43 1476 1477 "projet_cs/utils.ml" 46 1573 1592
+type(
+  int list
+)
+"projet_cs/utils.ml" 49 1635 1639 "projet_cs/utils.ml" 49 1635 1647
+type(
+  'a list -> 'a -> 'a list
+)
+ident(
+  def moduloXn "projet_cs/utils.ml" 56 1824 1824 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 49 1635 1648 "projet_cs/utils.ml" 49 1635 1649
+type(
+  'a list
+)
+ident(
+  def p "projet_cs/utils.ml" 49 1635 1650 "projet_cs/utils.ml" 53 1784 1802
+)
+"projet_cs/utils.ml" 49 1635 1650 "projet_cs/utils.ml" 49 1635 1651
+type(
+  'a
+)
+ident(
+  def n "projet_cs/utils.ml" 50 1655 1656 "projet_cs/utils.ml" 53 1784 1802
+)
+"projet_cs/utils.ml" 50 1655 1664 "projet_cs/utils.ml" 50 1655 1671
+type(
+  'b -> 'b list -> 'b list -> 'b list
+)
+ident(
+  def mod_aux "projet_cs/utils.ml" 50 1655 1656 "projet_cs/utils.ml" 53 1784 1802
+)
+"projet_cs/utils.ml" 50 1655 1672 "projet_cs/utils.ml" 50 1655 1673
+type(
+  'b
+)
+ident(
+  def n "projet_cs/utils.ml" 50 1655 1674 "projet_cs/utils.ml" 52 1712 1783
+)
+"projet_cs/utils.ml" 50 1655 1674 "projet_cs/utils.ml" 50 1655 1677
+type(
+  'b list
+)
+ident(
+  def acc "projet_cs/utils.ml" 50 1655 1680 "projet_cs/utils.ml" 52 1712 1783
+)
+"projet_cs/utils.ml" 51 1689 1693 "projet_cs/utils.ml" 51 1689 1695
+type(
+  'b list
+)
+"projet_cs/utils.ml" 51 1689 1699 "projet_cs/utils.ml" 51 1689 1707
+type(
+  'b list -> 'b list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3172 3172 "list.mli" 76 3172 3200
+)
+"projet_cs/utils.ml" 51 1689 1708 "projet_cs/utils.ml" 51 1689 1711
+type(
+  'b list
+)
+ident(
+  int_ref acc "projet_cs/utils.ml" 50 1655 1674 "projet_cs/utils.ml" 50 1655 1677
+)
+"projet_cs/utils.ml" 51 1689 1699 "projet_cs/utils.ml" 51 1689 1711
+type(
+  'b list
+)
+"projet_cs/utils.ml" 52 1712 1716 "projet_cs/utils.ml" 52 1712 1717
+type(
+  'b
+)
+ident(
+  def h "projet_cs/utils.ml" 52 1712 1726 "projet_cs/utils.ml" 52 1712 1783
+)
+"projet_cs/utils.ml" 52 1712 1721 "projet_cs/utils.ml" 52 1712 1722
+type(
+  'b list
+)
+ident(
+  def t "projet_cs/utils.ml" 52 1712 1726 "projet_cs/utils.ml" 52 1712 1783
+)
+"projet_cs/utils.ml" 52 1712 1716 "projet_cs/utils.ml" 52 1712 1722
+type(
+  'b list
+)
+"projet_cs/utils.ml" 52 1712 1729 "projet_cs/utils.ml" 52 1712 1730
+type(
+  'b
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 52 1712 1716 "projet_cs/utils.ml" 52 1712 1717
+)
+"projet_cs/utils.ml" 52 1712 1731 "projet_cs/utils.ml" 52 1712 1732
+type(
+  'b -> 'b -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 135 5721 5721 "stdlib.mli" 135 5721 5768
+)
+"projet_cs/utils.ml" 52 1712 1733 "projet_cs/utils.ml" 52 1712 1734
+type(
+  'b
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 50 1655 1672 "projet_cs/utils.ml" 50 1655 1673
+)
+"projet_cs/utils.ml" 52 1712 1729 "projet_cs/utils.ml" 52 1712 1734
+type(
+  bool
+)
+"projet_cs/utils.ml" 52 1712 1740 "projet_cs/utils.ml" 52 1712 1747
+type(
+  'b -> 'b list -> 'b list -> 'b list
+)
+ident(
+  int_ref mod_aux "projet_cs/utils.ml" 50 1655 1664 "projet_cs/utils.ml" 50 1655 1671
+)
+"projet_cs/utils.ml" 52 1712 1748 "projet_cs/utils.ml" 52 1712 1749
+type(
+  'b
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 50 1655 1672 "projet_cs/utils.ml" 50 1655 1673
+)
+"projet_cs/utils.ml" 52 1712 1751 "projet_cs/utils.ml" 52 1712 1752
+type(
+  'b
+)
+ident(
+  int_ref h "projet_cs/utils.ml" 52 1712 1716 "projet_cs/utils.ml" 52 1712 1717
+)
+"projet_cs/utils.ml" 52 1712 1756 "projet_cs/utils.ml" 52 1712 1759
+type(
+  'b list
+)
+ident(
+  int_ref acc "projet_cs/utils.ml" 50 1655 1674 "projet_cs/utils.ml" 50 1655 1677
+)
+"projet_cs/utils.ml" 52 1712 1750 "projet_cs/utils.ml" 52 1712 1760
+type(
+  'b list
+)
+"projet_cs/utils.ml" 52 1712 1761 "projet_cs/utils.ml" 52 1712 1762
+type(
+  'b list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 52 1712 1721 "projet_cs/utils.ml" 52 1712 1722
+)
+"projet_cs/utils.ml" 52 1712 1740 "projet_cs/utils.ml" 52 1712 1762
+type(
+  'b list
+)
+"projet_cs/utils.ml" 52 1712 1768 "projet_cs/utils.ml" 52 1712 1775
+type(
+  'b -> 'b list -> 'b list -> 'b list
+)
+ident(
+  int_ref mod_aux "projet_cs/utils.ml" 50 1655 1664 "projet_cs/utils.ml" 50 1655 1671
+)
+"projet_cs/utils.ml" 52 1712 1776 "projet_cs/utils.ml" 52 1712 1777
+type(
+  'b
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 50 1655 1672 "projet_cs/utils.ml" 50 1655 1673
+)
+"projet_cs/utils.ml" 52 1712 1778 "projet_cs/utils.ml" 52 1712 1781
+type(
+  'b list
+)
+ident(
+  int_ref acc "projet_cs/utils.ml" 50 1655 1674 "projet_cs/utils.ml" 50 1655 1677
+)
+"projet_cs/utils.ml" 52 1712 1782 "projet_cs/utils.ml" 52 1712 1783
+type(
+  'b list
+)
+ident(
+  int_ref t "projet_cs/utils.ml" 52 1712 1721 "projet_cs/utils.ml" 52 1712 1722
+)
+"projet_cs/utils.ml" 52 1712 1768 "projet_cs/utils.ml" 52 1712 1783
+type(
+  'b list
+)
+"projet_cs/utils.ml" 52 1712 1726 "projet_cs/utils.ml" 52 1712 1783
+type(
+  'b list
+)
+"projet_cs/utils.ml" 50 1655 1680 "projet_cs/utils.ml" 52 1712 1783
+type(
+  'b list -> 'b list
+)
+"projet_cs/utils.ml" 53 1784 1788 "projet_cs/utils.ml" 53 1784 1795
+type(
+  'a -> 'a list -> 'a list -> 'a list
+)
+ident(
+  int_ref mod_aux "projet_cs/utils.ml" 50 1655 1664 "projet_cs/utils.ml" 50 1655 1671
+)
+"projet_cs/utils.ml" 53 1784 1796 "projet_cs/utils.ml" 53 1784 1797
+type(
+  'a
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 49 1635 1650 "projet_cs/utils.ml" 49 1635 1651
+)
+"projet_cs/utils.ml" 53 1784 1798 "projet_cs/utils.ml" 53 1784 1800
+type(
+  'a list
+)
+"projet_cs/utils.ml" 53 1784 1801 "projet_cs/utils.ml" 53 1784 1802
+type(
+  'a list
+)
+ident(
+  int_ref p "projet_cs/utils.ml" 49 1635 1648 "projet_cs/utils.ml" 49 1635 1649
+)
+"projet_cs/utils.ml" 53 1784 1788 "projet_cs/utils.ml" 53 1784 1802
+type(
+  'a list
+)
+"projet_cs/utils.ml" 50 1655 1656 "projet_cs/utils.ml" 53 1784 1802
+type(
+  'a list
+)
+"projet_cs/utils.ml" 56 1824 1828 "projet_cs/utils.ml" 56 1824 1835
+type(
+  int -> int
+)
+ident(
+  def twoPowN "projet_cs/utils.ml" 59 1933 1933 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 56 1824 1836 "projet_cs/utils.ml" 56 1824 1837
+type(
+  int
+)
+ident(
+  def n "projet_cs/utils.ml" 56 1824 1840 "projet_cs/utils.ml" 56 1824 1875
+)
+"projet_cs/utils.ml" 56 1824 1840 "projet_cs/utils.ml" 56 1824 1852
+type(
+  float -> int
+)
+ident(
+  int_ref Stdlib.int_of_float "stdlib.mli" 617 23569 23569 "stdlib.mli" 617 23569 23621
+)
+"projet_cs/utils.ml" 56 1824 1854 "projet_cs/utils.ml" 56 1824 1856
+type(
+  float
+)
+"projet_cs/utils.ml" 56 1824 1857 "projet_cs/utils.ml" 56 1824 1859
+type(
+  float -> float -> float
+)
+ident(
+  int_ref Stdlib.( ** ) "stdlib.mli" 476 18220 18220 "stdlib.mli" 477 18289 18314
+)
+"projet_cs/utils.ml" 56 1824 1860 "projet_cs/utils.ml" 56 1824 1872
+type(
+  int -> float
+)
+ident(
+  int_ref Stdlib.float_of_int "stdlib.mli" 611 23381 23381 "stdlib.mli" 611 23381 23433
+)
+"projet_cs/utils.ml" 56 1824 1873 "projet_cs/utils.ml" 56 1824 1874
+type(
+  int
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 56 1824 1836 "projet_cs/utils.ml" 56 1824 1837
+)
+"projet_cs/utils.ml" 56 1824 1860 "projet_cs/utils.ml" 56 1824 1874
+type(
+  float
+)
+"projet_cs/utils.ml" 56 1824 1853 "projet_cs/utils.ml" 56 1824 1875
+type(
+  float
+)
+"projet_cs/utils.ml" 56 1824 1840 "projet_cs/utils.ml" 56 1824 1875
+type(
+  int
+)
+"projet_cs/utils.ml" 59 1933 1937 "projet_cs/utils.ml" 59 1933 1945
+type(
+  int -> int
+)
+ident(
+  def int_log2 "projet_cs/utils.ml" 59 1933 2020 "projet_cs/utils.ml" 0 0 -1
+)
+"projet_cs/utils.ml" 59 1933 1946 "projet_cs/utils.ml" 59 1933 1947
+type(
+  int
+)
+ident(
+  def n "projet_cs/utils.ml" 59 1933 1950 "projet_cs/utils.ml" 59 1933 2020
+)
+"projet_cs/utils.ml" 59 1933 1950 "projet_cs/utils.ml" 59 1933 1962
+type(
+  float -> int
+)
+ident(
+  int_ref Stdlib.int_of_float "stdlib.mli" 617 23569 23569 "stdlib.mli" 617 23569 23621
+)
+"projet_cs/utils.ml" 59 1933 1964 "projet_cs/utils.ml" 59 1933 1974
+type(
+  float -> float
+)
+ident(
+  int_ref Stdlib.Float.ceil "float.mli" 277 10879 10879 "float.mli" 278 10937 10960
+)
+"projet_cs/utils.ml" 59 1933 1976 "projet_cs/utils.ml" 59 1933 1985
+type(
+  float -> float
+)
+ident(
+  int_ref Stdlib.Float.log "float.mli" 194 7537 7537 "float.mli" 194 7537 7615
+)
+"projet_cs/utils.ml" 59 1933 1987 "projet_cs/utils.ml" 59 1933 1999
+type(
+  int -> float
+)
+ident(
+  int_ref Stdlib.float_of_int "stdlib.mli" 611 23381 23381 "stdlib.mli" 611 23381 23433
+)
+"projet_cs/utils.ml" 59 1933 2000 "projet_cs/utils.ml" 59 1933 2001
+type(
+  int
+)
+ident(
+  int_ref n "projet_cs/utils.ml" 59 1933 1946 "projet_cs/utils.ml" 59 1933 1947
+)
+"projet_cs/utils.ml" 59 1933 1986 "projet_cs/utils.ml" 59 1933 2002
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 1976 "projet_cs/utils.ml" 59 1933 2002
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 2003 "projet_cs/utils.ml" 59 1933 2005
+type(
+  float -> float -> float
+)
+ident(
+  int_ref Stdlib.( /. ) "stdlib.mli" 471 18055 18055 "stdlib.mli" 471 18055 18110
+)
+"projet_cs/utils.ml" 59 1933 2006 "projet_cs/utils.ml" 59 1933 2015
+type(
+  float -> float
+)
+ident(
+  int_ref Stdlib.Float.log "float.mli" 194 7537 7537 "float.mli" 194 7537 7615
+)
+"projet_cs/utils.ml" 59 1933 2016 "projet_cs/utils.ml" 59 1933 2018
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 2006 "projet_cs/utils.ml" 59 1933 2018
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 1975 "projet_cs/utils.ml" 59 1933 2019
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 1963 "projet_cs/utils.ml" 59 1933 2020
+type(
+  float
+)
+"projet_cs/utils.ml" 59 1933 1950 "projet_cs/utils.ml" 59 1933 2020
+type(
+  int
+)
