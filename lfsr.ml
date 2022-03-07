@@ -31,7 +31,7 @@ let ( *! ) x y =
 exception NotSameLengthLists;;
 
 (* Calcul d'un r_i selon les valeurs de branchements d'un LFSR et d'un accumulateur contenant les valeurs *)
-(* nécessaires au calcul *)
+(* nï¿½cessaires au calcul *)
 let calc branch acc = 
 	let rec aux branch acc res = 
 		match branch, acc with
@@ -61,7 +61,7 @@ let poly_from_lfsr_branch lfsr =
 	in aux [] 0 lfsr.branch;;
 
 
-(* Retourne la liste l privée de ses éléments dépassant l'indice i *)
+(* Retourne la liste l privï¿½e de ses ï¿½lï¿½ments dï¿½passant l'indice i *)
 let until_i l i =
 	let rec aux acc j i = function
 		| l when j > i -> List.rev acc
@@ -70,7 +70,7 @@ let until_i l i =
 	in aux [] 0 i l;;
 
 
-(* Retourne la somme des produits des éléments des 2 listes *)
+(* Retourne la somme des produits des ï¿½lï¿½ments des 2 listes *)
 let f2_sum l1 l2 =
 	let rec aux acc l1 l2 =
 		match l1, l2 with
@@ -94,29 +94,29 @@ let gx_calc lfsr =
 	in aux [] 0 lfsr;;
 
 
-(* Calcul du triplet (l, G(X), R(X)) à partir d'un LFSR *)
+(* Calcul du triplet (l, G(X), R(X)) ï¿½ partir d'un LFSR *)
 let lgxrx_from_lfsr lfsr = (lfsr.length, (gx_calc lfsr), (poly_from_lfsr_branch lfsr));;
 
-(* Fonctions pour récupérer les divers éléments du triplet (l, G(X), R(X)) *)
+(* Fonctions pour rï¿½cupï¿½rer les divers ï¿½lï¿½ments du triplet (l, G(X), R(X)) *)
 let lgxrx_length (l, gx, rx) = l;;
 let lgxrx_gx (l, gx, rx) = gx;;
 let lgxrx_rx (l, gx, rx) = rx;;
 
 
-(* Calcul des valeurs de branchement à partir du triplet (l, G(X), R(X)) *)
+(* Calcul des valeurs de branchement ï¿½ partir du triplet (l, G(X), R(X)) *)
 let branch_calc lgxrx =
-	let rx = lgxrx_rx lgxrx in poly_to_binary rx;;
+	let rx = lgxrx_rx lgxrx in poly_to_binary rx (lgxrx_length lgxrx);;
 
 
-(* Calcul des valeurs initiales r0.. r_l-1 à partir du triplet (l, G(X), R(X)) *)
+(* Calcul des valeurs initiales r0.. r_l-1 ï¿½ partir du triplet (l, G(X), R(X)) *)
 let base_calc lgxrx =
 	let gx = (lgxrx_gx lgxrx) and rx = (lgxrx_rx lgxrx) in
 	let (a, b) = quotient gx rx and len = lgxrx_length lgxrx in
 	let s = moduloXn (sum_poly a (multKaratsuba b (inverse_mod rx len))) len in
-	poly_to_binary s;;
+	poly_to_binary s (lgxrx_length lgxrx);;
 	
 	
-(* Calcul d'un LFSR à partir d'un triplet (l, G(X), R(X)) *)
+(* Calcul d'un LFSR ï¿½ partir d'un triplet (l, G(X), R(X)) *)
 let lfsr_from_lgxrx lgxrx = {length=(lgxrx_length lgxrx); base=(base_calc lgxrx); branch=(branch_calc lgxrx)};;
 
 
@@ -128,7 +128,7 @@ let smallest_lgxrx lgxrx =
 	((degree q2) + 1, q1, q2);;
 
 
-(* Génère un polynôme pseudo-aléatoire sous forme de liste binaire de longueur l *)
+(* Gï¿½nï¿½re un polynï¿½me pseudo-alï¿½atoire sous forme de liste binaire de longueur l *)
 let random_poly l = 
 	let rec aux acc l = function
 		| i when i = l -> List.rev acc
@@ -136,8 +136,8 @@ let random_poly l =
 	in aux [] l 0;;
 
 
-(* revoir complexité *)
-(* Génère un """""""bon""""""" LFSR de longueur l *)
+(* revoir complexitï¿½ *)
+(* Gï¿½nï¿½re un """""""bon""""""" LFSR de longueur l *)
 let rec bon_lfsr l =
 	let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly (l - 1)) in 
 	let gxp = moduloXn (multKaratsuba rxp sxp) l in

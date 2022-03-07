@@ -1,0 +1,3354 @@
+"ocaml_lfsr/lfsr.ml" 18 291 295 "ocaml_lfsr/lfsr.ml" 18 291 301
+type(
+  int -> int -> int
+)
+ident(
+  def +! "ocaml_lfsr/lfsr.ml" 25 377 377 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 18 291 302 "ocaml_lfsr/lfsr.ml" 18 291 303
+type(
+  int
+)
+ident(
+  def x "ocaml_lfsr/lfsr.ml" 18 291 304 "ocaml_lfsr/lfsr.ml" 21 346 355
+)
+"ocaml_lfsr/lfsr.ml" 18 291 304 "ocaml_lfsr/lfsr.ml" 18 291 305
+type(
+  int
+)
+ident(
+  def y "ocaml_lfsr/lfsr.ml" 19 309 310 "ocaml_lfsr/lfsr.ml" 21 346 355
+)
+"ocaml_lfsr/lfsr.ml" 19 309 316 "ocaml_lfsr/lfsr.ml" 19 309 317
+type(
+  int
+)
+ident(
+  int_ref x "ocaml_lfsr/lfsr.ml" 18 291 302 "ocaml_lfsr/lfsr.ml" 18 291 303
+)
+"ocaml_lfsr/lfsr.ml" 19 309 319 "ocaml_lfsr/lfsr.ml" 19 309 320
+type(
+  int
+)
+ident(
+  int_ref y "ocaml_lfsr/lfsr.ml" 18 291 304 "ocaml_lfsr/lfsr.ml" 18 291 305
+)
+"ocaml_lfsr/lfsr.ml" 19 309 316 "ocaml_lfsr/lfsr.ml" 19 309 320
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 329 "ocaml_lfsr/lfsr.ml" 20 326 330
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 332 "ocaml_lfsr/lfsr.ml" 20 326 333
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 329 "ocaml_lfsr/lfsr.ml" 20 326 333
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 336 "ocaml_lfsr/lfsr.ml" 20 326 337
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 339 "ocaml_lfsr/lfsr.ml" 20 326 340
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 336 "ocaml_lfsr/lfsr.ml" 20 326 340
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 329 "ocaml_lfsr/lfsr.ml" 20 326 340
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 20 326 344 "ocaml_lfsr/lfsr.ml" 20 326 345
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 21 346 349 "ocaml_lfsr/lfsr.ml" 21 346 350
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 21 346 354 "ocaml_lfsr/lfsr.ml" 21 346 355
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 19 309 310 "ocaml_lfsr/lfsr.ml" 21 346 355
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 25 377 381 "ocaml_lfsr/lfsr.ml" 25 377 387
+type(
+  int -> int -> int
+)
+ident(
+  def *! "ocaml_lfsr/lfsr.ml" 31 439 439 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 25 377 388 "ocaml_lfsr/lfsr.ml" 25 377 389
+type(
+  int
+)
+ident(
+  def x "ocaml_lfsr/lfsr.ml" 25 377 390 "ocaml_lfsr/lfsr.ml" 28 425 434
+)
+"ocaml_lfsr/lfsr.ml" 25 377 390 "ocaml_lfsr/lfsr.ml" 25 377 391
+type(
+  int
+)
+ident(
+  def y "ocaml_lfsr/lfsr.ml" 26 395 396 "ocaml_lfsr/lfsr.ml" 28 425 434
+)
+"ocaml_lfsr/lfsr.ml" 26 395 402 "ocaml_lfsr/lfsr.ml" 26 395 403
+type(
+  int
+)
+ident(
+  int_ref x "ocaml_lfsr/lfsr.ml" 25 377 388 "ocaml_lfsr/lfsr.ml" 25 377 389
+)
+"ocaml_lfsr/lfsr.ml" 26 395 405 "ocaml_lfsr/lfsr.ml" 26 395 406
+type(
+  int
+)
+ident(
+  int_ref y "ocaml_lfsr/lfsr.ml" 25 377 390 "ocaml_lfsr/lfsr.ml" 25 377 391
+)
+"ocaml_lfsr/lfsr.ml" 26 395 402 "ocaml_lfsr/lfsr.ml" 26 395 406
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 27 412 415 "ocaml_lfsr/lfsr.ml" 27 412 416
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 27 412 418 "ocaml_lfsr/lfsr.ml" 27 412 419
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 27 412 415 "ocaml_lfsr/lfsr.ml" 27 412 419
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 27 412 423 "ocaml_lfsr/lfsr.ml" 27 412 424
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 28 425 428 "ocaml_lfsr/lfsr.ml" 28 425 429
+type(
+  int * int
+)
+"ocaml_lfsr/lfsr.ml" 28 425 433 "ocaml_lfsr/lfsr.ml" 28 425 434
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 26 395 396 "ocaml_lfsr/lfsr.ml" 28 425 434
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 35 610 614 "ocaml_lfsr/lfsr.ml" 35 610 618
+type(
+  int list -> int list -> int
+)
+ident(
+  def calc "ocaml_lfsr/lfsr.ml" 45 896 896 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 35 610 619 "ocaml_lfsr/lfsr.ml" 35 610 625
+type(
+  int list
+)
+ident(
+  def branch "ocaml_lfsr/lfsr.ml" 35 610 626 "ocaml_lfsr/lfsr.ml" 41 800 831
+)
+"ocaml_lfsr/lfsr.ml" 35 610 626 "ocaml_lfsr/lfsr.ml" 35 610 629
+type(
+  int list
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 36 633 634 "ocaml_lfsr/lfsr.ml" 41 800 831
+)
+"ocaml_lfsr/lfsr.ml" 36 633 642 "ocaml_lfsr/lfsr.ml" 36 633 645
+type(
+  int list -> int list -> int -> int
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 36 633 634 "ocaml_lfsr/lfsr.ml" 41 800 831
+)
+"ocaml_lfsr/lfsr.ml" 36 633 646 "ocaml_lfsr/lfsr.ml" 36 633 652
+type(
+  int list
+)
+ident(
+  def branch "ocaml_lfsr/lfsr.ml" 36 633 653 "ocaml_lfsr/lfsr.ml" 40 763 799
+)
+"ocaml_lfsr/lfsr.ml" 36 633 653 "ocaml_lfsr/lfsr.ml" 36 633 656
+type(
+  int list
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 36 633 657 "ocaml_lfsr/lfsr.ml" 40 763 799
+)
+"ocaml_lfsr/lfsr.ml" 36 633 657 "ocaml_lfsr/lfsr.ml" 36 633 660
+type(
+  int
+)
+ident(
+  def res "ocaml_lfsr/lfsr.ml" 37 664 666 "ocaml_lfsr/lfsr.ml" 40 763 799
+)
+"ocaml_lfsr/lfsr.ml" 37 664 672 "ocaml_lfsr/lfsr.ml" 37 664 678
+type(
+  int list
+)
+ident(
+  int_ref branch "ocaml_lfsr/lfsr.ml" 36 633 646 "ocaml_lfsr/lfsr.ml" 36 633 652
+)
+"ocaml_lfsr/lfsr.ml" 37 664 680 "ocaml_lfsr/lfsr.ml" 37 664 683
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 36 633 653 "ocaml_lfsr/lfsr.ml" 36 633 656
+)
+"ocaml_lfsr/lfsr.ml" 37 664 672 "ocaml_lfsr/lfsr.ml" 37 664 683
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 38 689 693 "ocaml_lfsr/lfsr.ml" 38 689 695
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 38 689 697 "ocaml_lfsr/lfsr.ml" 38 689 699
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 38 689 693 "ocaml_lfsr/lfsr.ml" 38 689 699
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 38 689 703 "ocaml_lfsr/lfsr.ml" 38 689 706
+type(
+  int
+)
+ident(
+  int_ref res "ocaml_lfsr/lfsr.ml" 36 633 657 "ocaml_lfsr/lfsr.ml" 36 633 660
+)
+"ocaml_lfsr/lfsr.ml" 39 707 711 "ocaml_lfsr/lfsr.ml" 39 707 713
+type(
+  int
+)
+ident(
+  def h1 "ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 762
+)
+"ocaml_lfsr/lfsr.ml" 39 707 717 "ocaml_lfsr/lfsr.ml" 39 707 719
+type(
+  int list
+)
+ident(
+  def t1 "ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 762
+)
+"ocaml_lfsr/lfsr.ml" 39 707 711 "ocaml_lfsr/lfsr.ml" 39 707 719
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 39 707 721 "ocaml_lfsr/lfsr.ml" 39 707 723
+type(
+  int
+)
+ident(
+  def h2 "ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 762
+)
+"ocaml_lfsr/lfsr.ml" 39 707 727 "ocaml_lfsr/lfsr.ml" 39 707 729
+type(
+  int list
+)
+ident(
+  def t2 "ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 762
+)
+"ocaml_lfsr/lfsr.ml" 39 707 721 "ocaml_lfsr/lfsr.ml" 39 707 729
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 39 707 711 "ocaml_lfsr/lfsr.ml" 39 707 729
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 736
+type(
+  int list -> int list -> int -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 36 633 642 "ocaml_lfsr/lfsr.ml" 36 633 645
+)
+"ocaml_lfsr/lfsr.ml" 39 707 737 "ocaml_lfsr/lfsr.ml" 39 707 739
+type(
+  int list
+)
+ident(
+  int_ref t1 "ocaml_lfsr/lfsr.ml" 39 707 717 "ocaml_lfsr/lfsr.ml" 39 707 719
+)
+"ocaml_lfsr/lfsr.ml" 39 707 740 "ocaml_lfsr/lfsr.ml" 39 707 742
+type(
+  int list
+)
+ident(
+  int_ref t2 "ocaml_lfsr/lfsr.ml" 39 707 727 "ocaml_lfsr/lfsr.ml" 39 707 729
+)
+"ocaml_lfsr/lfsr.ml" 39 707 744 "ocaml_lfsr/lfsr.ml" 39 707 747
+type(
+  int
+)
+ident(
+  int_ref res "ocaml_lfsr/lfsr.ml" 36 633 657 "ocaml_lfsr/lfsr.ml" 36 633 660
+)
+"ocaml_lfsr/lfsr.ml" 39 707 748 "ocaml_lfsr/lfsr.ml" 39 707 750
+type(
+  int -> int -> int
+)
+ident(
+  int_ref +! "ocaml_lfsr/lfsr.ml" 18 291 295 "ocaml_lfsr/lfsr.ml" 18 291 301
+)
+"ocaml_lfsr/lfsr.ml" 39 707 752 "ocaml_lfsr/lfsr.ml" 39 707 754
+type(
+  int
+)
+ident(
+  int_ref h1 "ocaml_lfsr/lfsr.ml" 39 707 711 "ocaml_lfsr/lfsr.ml" 39 707 713
+)
+"ocaml_lfsr/lfsr.ml" 39 707 755 "ocaml_lfsr/lfsr.ml" 39 707 757
+type(
+  int -> int -> int
+)
+ident(
+  int_ref *! "ocaml_lfsr/lfsr.ml" 25 377 381 "ocaml_lfsr/lfsr.ml" 25 377 387
+)
+"ocaml_lfsr/lfsr.ml" 39 707 758 "ocaml_lfsr/lfsr.ml" 39 707 760
+type(
+  int
+)
+ident(
+  int_ref h2 "ocaml_lfsr/lfsr.ml" 39 707 721 "ocaml_lfsr/lfsr.ml" 39 707 723
+)
+"ocaml_lfsr/lfsr.ml" 39 707 751 "ocaml_lfsr/lfsr.ml" 39 707 761
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 39 707 743 "ocaml_lfsr/lfsr.ml" 39 707 762
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 39 707 733 "ocaml_lfsr/lfsr.ml" 39 707 762
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 40 763 767 "ocaml_lfsr/lfsr.ml" 40 763 768
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 40 763 770 "ocaml_lfsr/lfsr.ml" 40 763 771
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 40 763 767 "ocaml_lfsr/lfsr.ml" 40 763 771
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 40 763 775 "ocaml_lfsr/lfsr.ml" 40 763 780
+type(
+  exn -> int
+)
+ident(
+  int_ref Stdlib.raise "stdlib.mli" 30 1602 1602 "stdlib.mli" 30 1602 1639
+)
+"ocaml_lfsr/lfsr.ml" 40 763 781 "ocaml_lfsr/lfsr.ml" 40 763 799
+type(
+  exn
+)
+"ocaml_lfsr/lfsr.ml" 40 763 775 "ocaml_lfsr/lfsr.ml" 40 763 799
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 37 664 666 "ocaml_lfsr/lfsr.ml" 40 763 799
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 41 800 804 "ocaml_lfsr/lfsr.ml" 41 800 807
+type(
+  int list -> int list -> int -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 36 633 642 "ocaml_lfsr/lfsr.ml" 36 633 645
+)
+"ocaml_lfsr/lfsr.ml" 41 800 808 "ocaml_lfsr/lfsr.ml" 41 800 814
+type(
+  int list
+)
+ident(
+  int_ref branch "ocaml_lfsr/lfsr.ml" 35 610 619 "ocaml_lfsr/lfsr.ml" 35 610 625
+)
+"ocaml_lfsr/lfsr.ml" 41 800 816 "ocaml_lfsr/lfsr.ml" 41 800 824
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 41 800 825 "ocaml_lfsr/lfsr.ml" 41 800 828
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 35 610 626 "ocaml_lfsr/lfsr.ml" 35 610 629
+)
+"ocaml_lfsr/lfsr.ml" 41 800 815 "ocaml_lfsr/lfsr.ml" 41 800 829
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 41 800 830 "ocaml_lfsr/lfsr.ml" 41 800 831
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 41 800 804 "ocaml_lfsr/lfsr.ml" 41 800 831
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 36 633 634 "ocaml_lfsr/lfsr.ml" 41 800 831
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 45 896 900 "ocaml_lfsr/lfsr.ml" 45 896 910
+type(
+  lfsr -> int -> int
+)
+ident(
+  def lfsr_value "ocaml_lfsr/lfsr.ml" 56 1211 1211 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 45 896 916 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+)
+"ocaml_lfsr/lfsr.ml" 45 896 916 "ocaml_lfsr/lfsr.ml" 45 896 917
+type(
+  int
+)
+ident(
+  def n "ocaml_lfsr/lfsr.ml" 46 920 921 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+)
+"ocaml_lfsr/lfsr.ml" 46 920 924 "ocaml_lfsr/lfsr.ml" 46 920 925
+type(
+  int
+)
+ident(
+  int_ref n "ocaml_lfsr/lfsr.ml" 45 896 916 "ocaml_lfsr/lfsr.ml" 45 896 917
+)
+"ocaml_lfsr/lfsr.ml" 46 920 926 "ocaml_lfsr/lfsr.ml" 46 920 927
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( < ) "stdlib.mli" 132 5646 5646 "stdlib.mli" 132 5646 5693
+)
+"ocaml_lfsr/lfsr.ml" 46 920 928 "ocaml_lfsr/lfsr.ml" 46 920 932
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+)
+"ocaml_lfsr/lfsr.ml" 46 920 928 "ocaml_lfsr/lfsr.ml" 46 920 939
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 46 920 924 "ocaml_lfsr/lfsr.ml" 46 920 939
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 47 946 948 "ocaml_lfsr/lfsr.ml" 47 946 956
+type(
+  int list -> int -> int
+)
+ident(
+  int_ref Stdlib.List.nth "list.mli" 62 2690 2690 "list.mli" 62 2690 2719
+)
+"ocaml_lfsr/lfsr.ml" 47 946 957 "ocaml_lfsr/lfsr.ml" 47 946 961
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+)
+"ocaml_lfsr/lfsr.ml" 47 946 957 "ocaml_lfsr/lfsr.ml" 47 946 966
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 47 946 967 "ocaml_lfsr/lfsr.ml" 47 946 968
+type(
+  int
+)
+ident(
+  int_ref n "ocaml_lfsr/lfsr.ml" 45 896 916 "ocaml_lfsr/lfsr.ml" 45 896 917
+)
+"ocaml_lfsr/lfsr.ml" 47 946 948 "ocaml_lfsr/lfsr.ml" 47 946 968
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 49 975 985 "ocaml_lfsr/lfsr.ml" 49 975 988
+type(
+  int -> lfsr -> int list -> int -> int -> int
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 49 975 977 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+)
+"ocaml_lfsr/lfsr.ml" 49 975 989 "ocaml_lfsr/lfsr.ml" 49 975 990
+type(
+  int
+)
+ident(
+  def n "ocaml_lfsr/lfsr.ml" 49 975 991 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 49 975 991 "ocaml_lfsr/lfsr.ml" 49 975 995
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 49 975 996 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 49 975 996 "ocaml_lfsr/lfsr.ml" 49 975 999
+type(
+  int list
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 49 975 1000 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 49 975 1000 "ocaml_lfsr/lfsr.ml" 49 975 1001
+type(
+  int
+)
+ident(
+  def r "ocaml_lfsr/lfsr.ml" 49 975 1004 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1018 "ocaml_lfsr/lfsr.ml" 50 1013 1019
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 50 1013 1025 "ocaml_lfsr/lfsr.ml" 50 1013 1036
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1025 "ocaml_lfsr/lfsr.ml" 50 1013 1026
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 50 1013 1018 "ocaml_lfsr/lfsr.ml" 50 1013 1019
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1027 "ocaml_lfsr/lfsr.ml" 50 1013 1028
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 137 5800 5800 "stdlib.mli" 137 5800 5850
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1029 "ocaml_lfsr/lfsr.ml" 50 1013 1030
+type(
+  int
+)
+ident(
+  int_ref n "ocaml_lfsr/lfsr.ml" 49 975 989 "ocaml_lfsr/lfsr.ml" 49 975 990
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1025 "ocaml_lfsr/lfsr.ml" 50 1013 1030
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 50 1013 1035 "ocaml_lfsr/lfsr.ml" 50 1013 1036
+type(
+  int
+)
+ident(
+  int_ref r "ocaml_lfsr/lfsr.ml" 49 975 1000 "ocaml_lfsr/lfsr.ml" 49 975 1001
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1042 "ocaml_lfsr/lfsr.ml" 51 1037 1043
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 51 1037 1047 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1051 "ocaml_lfsr/lfsr.ml" 51 1037 1053
+type(
+  int
+)
+ident(
+  def vi "ocaml_lfsr/lfsr.ml" 51 1037 1080 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1056 "ocaml_lfsr/lfsr.ml" 51 1037 1060
+type(
+  int list -> int list -> int
+)
+ident(
+  int_ref calc "ocaml_lfsr/lfsr.ml" 35 610 614 "ocaml_lfsr/lfsr.ml" 35 610 618
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1061 "ocaml_lfsr/lfsr.ml" 51 1037 1065
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 49 975 991 "ocaml_lfsr/lfsr.ml" 49 975 995
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1061 "ocaml_lfsr/lfsr.ml" 51 1037 1072
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1073 "ocaml_lfsr/lfsr.ml" 51 1037 1076
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 49 975 996 "ocaml_lfsr/lfsr.ml" 49 975 999
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1056 "ocaml_lfsr/lfsr.ml" 51 1037 1076
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1080 "ocaml_lfsr/lfsr.ml" 51 1037 1083
+type(
+  int -> lfsr -> int list -> int -> int -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 49 975 985 "ocaml_lfsr/lfsr.ml" 49 975 988
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1084 "ocaml_lfsr/lfsr.ml" 51 1037 1085
+type(
+  int
+)
+ident(
+  int_ref n "ocaml_lfsr/lfsr.ml" 49 975 989 "ocaml_lfsr/lfsr.ml" 49 975 990
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1086 "ocaml_lfsr/lfsr.ml" 51 1037 1090
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 49 975 991 "ocaml_lfsr/lfsr.ml" 49 975 995
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1092 "ocaml_lfsr/lfsr.ml" 51 1037 1100
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1102 "ocaml_lfsr/lfsr.ml" 51 1037 1104
+type(
+  int
+)
+ident(
+  int_ref vi "ocaml_lfsr/lfsr.ml" 51 1037 1051 "ocaml_lfsr/lfsr.ml" 51 1037 1053
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1109 "ocaml_lfsr/lfsr.ml" 51 1037 1117
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1119 "ocaml_lfsr/lfsr.ml" 51 1037 1126
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.tl "list.mli" 58 2558 2558 "list.mli" 58 2558 2585
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1127 "ocaml_lfsr/lfsr.ml" 51 1037 1130
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 49 975 996 "ocaml_lfsr/lfsr.ml" 49 975 999
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1118 "ocaml_lfsr/lfsr.ml" 51 1037 1131
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1108 "ocaml_lfsr/lfsr.ml" 51 1037 1132
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1101 "ocaml_lfsr/lfsr.ml" 51 1037 1133
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1091 "ocaml_lfsr/lfsr.ml" 51 1037 1134
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1135 "ocaml_lfsr/lfsr.ml" 51 1037 1137
+type(
+  int
+)
+ident(
+  int_ref vi "ocaml_lfsr/lfsr.ml" 51 1037 1051 "ocaml_lfsr/lfsr.ml" 51 1037 1053
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1139 "ocaml_lfsr/lfsr.ml" 51 1037 1140
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 51 1037 1042 "ocaml_lfsr/lfsr.ml" 51 1037 1043
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1141 "ocaml_lfsr/lfsr.ml" 51 1037 1142
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1143 "ocaml_lfsr/lfsr.ml" 51 1037 1144
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1138 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1080 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 51 1037 1047 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 49 975 1004 "ocaml_lfsr/lfsr.ml" 51 1037 1145
+type(
+  int -> int
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1151 "ocaml_lfsr/lfsr.ml" 52 1146 1154
+type(
+  int -> lfsr -> int list -> int -> int -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 49 975 985 "ocaml_lfsr/lfsr.ml" 49 975 988
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1155 "ocaml_lfsr/lfsr.ml" 52 1146 1156
+type(
+  int
+)
+ident(
+  int_ref n "ocaml_lfsr/lfsr.ml" 45 896 916 "ocaml_lfsr/lfsr.ml" 45 896 917
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1157 "ocaml_lfsr/lfsr.ml" 52 1146 1161
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1162 "ocaml_lfsr/lfsr.ml" 52 1146 1166
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1162 "ocaml_lfsr/lfsr.ml" 52 1146 1171
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1172 "ocaml_lfsr/lfsr.ml" 52 1146 1173
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1174 "ocaml_lfsr/lfsr.ml" 52 1146 1178
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 45 896 911 "ocaml_lfsr/lfsr.ml" 45 896 915
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1174 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 52 1146 1151 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 49 975 977 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 46 920 921 "ocaml_lfsr/lfsr.ml" 52 1146 1185
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 56 1211 1215 "ocaml_lfsr/lfsr.ml" 56 1211 1236
+type(
+  lfsr -> int list
+)
+ident(
+  def poly_from_lfsr_branch "ocaml_lfsr/lfsr.ml" 65 1510 1510 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 56 1211 1237 "ocaml_lfsr/lfsr.ml" 56 1211 1241
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 57 1244 1245 "ocaml_lfsr/lfsr.ml" 61 1403 1427
+)
+"ocaml_lfsr/lfsr.ml" 57 1244 1253 "ocaml_lfsr/lfsr.ml" 57 1244 1256
+type(
+  int list -> int -> int list -> int list
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 57 1244 1245 "ocaml_lfsr/lfsr.ml" 61 1403 1427
+)
+"ocaml_lfsr/lfsr.ml" 57 1244 1257 "ocaml_lfsr/lfsr.ml" 57 1244 1261
+type(
+  int list
+)
+ident(
+  def poly "ocaml_lfsr/lfsr.ml" 57 1244 1262 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+)
+"ocaml_lfsr/lfsr.ml" 57 1244 1262 "ocaml_lfsr/lfsr.ml" 57 1244 1268
+type(
+  int
+)
+ident(
+  def degree "ocaml_lfsr/lfsr.ml" 57 1244 1271 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+)
+"ocaml_lfsr/lfsr.ml" 58 1280 1284 "ocaml_lfsr/lfsr.ml" 58 1280 1286
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 58 1280 1290 "ocaml_lfsr/lfsr.ml" 58 1280 1298
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 58 1280 1299 "ocaml_lfsr/lfsr.ml" 58 1280 1303
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 57 1244 1257 "ocaml_lfsr/lfsr.ml" 57 1244 1261
+)
+"ocaml_lfsr/lfsr.ml" 58 1280 1290 "ocaml_lfsr/lfsr.ml" 58 1280 1303
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1308 "ocaml_lfsr/lfsr.ml" 59 1304 1309
+type(
+  int
+)
+ident(
+  def h "ocaml_lfsr/lfsr.ml" 59 1304 1320 "ocaml_lfsr/lfsr.ml" 59 1304 1364
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1313 "ocaml_lfsr/lfsr.ml" 59 1304 1314
+type(
+  int list
+)
+ident(
+  def t "ocaml_lfsr/lfsr.ml" 59 1304 1320 "ocaml_lfsr/lfsr.ml" 59 1304 1364
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1308 "ocaml_lfsr/lfsr.ml" 59 1304 1314
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1320 "ocaml_lfsr/lfsr.ml" 59 1304 1321
+type(
+  int
+)
+ident(
+  int_ref h "ocaml_lfsr/lfsr.ml" 59 1304 1308 "ocaml_lfsr/lfsr.ml" 59 1304 1309
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1322 "ocaml_lfsr/lfsr.ml" 59 1304 1323
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1324 "ocaml_lfsr/lfsr.ml" 59 1304 1325
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1320 "ocaml_lfsr/lfsr.ml" 59 1304 1325
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1329 "ocaml_lfsr/lfsr.ml" 59 1304 1332
+type(
+  int list -> int -> int list -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 57 1244 1253 "ocaml_lfsr/lfsr.ml" 57 1244 1256
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1334 "ocaml_lfsr/lfsr.ml" 59 1304 1340
+type(
+  int
+)
+ident(
+  int_ref degree "ocaml_lfsr/lfsr.ml" 57 1244 1262 "ocaml_lfsr/lfsr.ml" 57 1244 1268
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1344 "ocaml_lfsr/lfsr.ml" 59 1304 1348
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 57 1244 1257 "ocaml_lfsr/lfsr.ml" 57 1244 1261
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1333 "ocaml_lfsr/lfsr.ml" 59 1304 1349
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1351 "ocaml_lfsr/lfsr.ml" 59 1304 1357
+type(
+  int
+)
+ident(
+  int_ref degree "ocaml_lfsr/lfsr.ml" 57 1244 1262 "ocaml_lfsr/lfsr.ml" 57 1244 1268
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1358 "ocaml_lfsr/lfsr.ml" 59 1304 1359
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1360 "ocaml_lfsr/lfsr.ml" 59 1304 1361
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1350 "ocaml_lfsr/lfsr.ml" 59 1304 1362
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1363 "ocaml_lfsr/lfsr.ml" 59 1304 1364
+type(
+  int list
+)
+ident(
+  int_ref t "ocaml_lfsr/lfsr.ml" 59 1304 1313 "ocaml_lfsr/lfsr.ml" 59 1304 1314
+)
+"ocaml_lfsr/lfsr.ml" 59 1304 1329 "ocaml_lfsr/lfsr.ml" 59 1304 1364
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1369 "ocaml_lfsr/lfsr.ml" 60 1365 1370
+type(
+  int
+)
+ident(
+  def h "ocaml_lfsr/lfsr.ml" 60 1365 1379 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1374 "ocaml_lfsr/lfsr.ml" 60 1365 1375
+type(
+  int list
+)
+ident(
+  def t "ocaml_lfsr/lfsr.ml" 60 1365 1379 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1369 "ocaml_lfsr/lfsr.ml" 60 1365 1375
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1379 "ocaml_lfsr/lfsr.ml" 60 1365 1382
+type(
+  int list -> int -> int list -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 57 1244 1253 "ocaml_lfsr/lfsr.ml" 57 1244 1256
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1383 "ocaml_lfsr/lfsr.ml" 60 1365 1387
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 57 1244 1257 "ocaml_lfsr/lfsr.ml" 57 1244 1261
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1389 "ocaml_lfsr/lfsr.ml" 60 1365 1395
+type(
+  int
+)
+ident(
+  int_ref degree "ocaml_lfsr/lfsr.ml" 57 1244 1262 "ocaml_lfsr/lfsr.ml" 57 1244 1268
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1396 "ocaml_lfsr/lfsr.ml" 60 1365 1397
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1398 "ocaml_lfsr/lfsr.ml" 60 1365 1399
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1388 "ocaml_lfsr/lfsr.ml" 60 1365 1400
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1401 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+type(
+  int list
+)
+ident(
+  int_ref t "ocaml_lfsr/lfsr.ml" 60 1365 1374 "ocaml_lfsr/lfsr.ml" 60 1365 1375
+)
+"ocaml_lfsr/lfsr.ml" 60 1365 1379 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 57 1244 1271 "ocaml_lfsr/lfsr.ml" 60 1365 1402
+type(
+  int list -> int list
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1407 "ocaml_lfsr/lfsr.ml" 61 1403 1410
+type(
+  int list -> int -> int list -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 57 1244 1253 "ocaml_lfsr/lfsr.ml" 57 1244 1256
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1411 "ocaml_lfsr/lfsr.ml" 61 1403 1413
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1414 "ocaml_lfsr/lfsr.ml" 61 1403 1415
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1416 "ocaml_lfsr/lfsr.ml" 61 1403 1420
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 56 1211 1237 "ocaml_lfsr/lfsr.ml" 56 1211 1241
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1416 "ocaml_lfsr/lfsr.ml" 61 1403 1427
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 61 1403 1407 "ocaml_lfsr/lfsr.ml" 61 1403 1427
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 57 1244 1245 "ocaml_lfsr/lfsr.ml" 61 1403 1427
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 65 1510 1514 "ocaml_lfsr/lfsr.ml" 65 1510 1521
+type(
+  'a list -> int -> 'a list
+)
+ident(
+  def until_i "ocaml_lfsr/lfsr.ml" 74 1744 1744 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 65 1510 1522 "ocaml_lfsr/lfsr.ml" 65 1510 1523
+type(
+  'a list
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 65 1510 1524 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+)
+"ocaml_lfsr/lfsr.ml" 65 1510 1524 "ocaml_lfsr/lfsr.ml" 65 1510 1525
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 66 1528 1529 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1537 "ocaml_lfsr/lfsr.ml" 66 1528 1540
+type(
+  'b list -> int -> int -> 'b list -> 'b list
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 66 1528 1529 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1541 "ocaml_lfsr/lfsr.ml" 66 1528 1544
+type(
+  'b list
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 66 1528 1545 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1545 "ocaml_lfsr/lfsr.ml" 66 1528 1546
+type(
+  int
+)
+ident(
+  def j "ocaml_lfsr/lfsr.ml" 66 1528 1547 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1547 "ocaml_lfsr/lfsr.ml" 66 1528 1548
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 66 1528 1551 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1564 "ocaml_lfsr/lfsr.ml" 67 1560 1565
+type(
+  'b list
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 67 1560 1571 "ocaml_lfsr/lfsr.ml" 67 1560 1592
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1571 "ocaml_lfsr/lfsr.ml" 67 1560 1572
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 66 1528 1545 "ocaml_lfsr/lfsr.ml" 66 1528 1546
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1573 "ocaml_lfsr/lfsr.ml" 67 1560 1574
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( > ) "stdlib.mli" 137 5800 5800 "stdlib.mli" 137 5800 5850
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1575 "ocaml_lfsr/lfsr.ml" 67 1560 1576
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 66 1528 1547 "ocaml_lfsr/lfsr.ml" 66 1528 1548
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1571 "ocaml_lfsr/lfsr.ml" 67 1560 1576
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1580 "ocaml_lfsr/lfsr.ml" 67 1560 1588
+type(
+  'b list -> 'b list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1589 "ocaml_lfsr/lfsr.ml" 67 1560 1592
+type(
+  'b list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 66 1528 1541 "ocaml_lfsr/lfsr.ml" 66 1528 1544
+)
+"ocaml_lfsr/lfsr.ml" 67 1560 1580 "ocaml_lfsr/lfsr.ml" 67 1560 1592
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1597 "ocaml_lfsr/lfsr.ml" 68 1593 1598
+type(
+  'b
+)
+ident(
+  def h "ocaml_lfsr/lfsr.ml" 68 1593 1607 "ocaml_lfsr/lfsr.ml" 68 1593 1633
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1602 "ocaml_lfsr/lfsr.ml" 68 1593 1603
+type(
+  'b list
+)
+ident(
+  def t "ocaml_lfsr/lfsr.ml" 68 1593 1607 "ocaml_lfsr/lfsr.ml" 68 1593 1633
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1597 "ocaml_lfsr/lfsr.ml" 68 1593 1603
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1607 "ocaml_lfsr/lfsr.ml" 68 1593 1610
+type(
+  'b list -> int -> int -> 'b list -> 'b list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 66 1528 1537 "ocaml_lfsr/lfsr.ml" 66 1528 1540
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1612 "ocaml_lfsr/lfsr.ml" 68 1593 1613
+type(
+  'b
+)
+ident(
+  int_ref h "ocaml_lfsr/lfsr.ml" 68 1593 1597 "ocaml_lfsr/lfsr.ml" 68 1593 1598
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1617 "ocaml_lfsr/lfsr.ml" 68 1593 1620
+type(
+  'b list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 66 1528 1541 "ocaml_lfsr/lfsr.ml" 66 1528 1544
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1611 "ocaml_lfsr/lfsr.ml" 68 1593 1621
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1623 "ocaml_lfsr/lfsr.ml" 68 1593 1624
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 66 1528 1545 "ocaml_lfsr/lfsr.ml" 66 1528 1546
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1625 "ocaml_lfsr/lfsr.ml" 68 1593 1626
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1627 "ocaml_lfsr/lfsr.ml" 68 1593 1628
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1622 "ocaml_lfsr/lfsr.ml" 68 1593 1629
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1630 "ocaml_lfsr/lfsr.ml" 68 1593 1631
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 66 1528 1547 "ocaml_lfsr/lfsr.ml" 66 1528 1548
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1632 "ocaml_lfsr/lfsr.ml" 68 1593 1633
+type(
+  'b list
+)
+ident(
+  int_ref t "ocaml_lfsr/lfsr.ml" 68 1593 1602 "ocaml_lfsr/lfsr.ml" 68 1593 1603
+)
+"ocaml_lfsr/lfsr.ml" 68 1593 1607 "ocaml_lfsr/lfsr.ml" 68 1593 1633
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 69 1634 1638 "ocaml_lfsr/lfsr.ml" 69 1634 1639
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 69 1634 1643 "ocaml_lfsr/lfsr.ml" 69 1634 1651
+type(
+  'b list -> 'b list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 69 1634 1652 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+type(
+  'b list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 66 1528 1541 "ocaml_lfsr/lfsr.ml" 66 1528 1544
+)
+"ocaml_lfsr/lfsr.ml" 69 1634 1643 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+type(
+  'b list
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1551 "ocaml_lfsr/lfsr.ml" 69 1634 1655
+type(
+  'b list -> 'b list
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1660 "ocaml_lfsr/lfsr.ml" 70 1656 1663
+type(
+  'a list -> int -> int -> 'a list -> 'a list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 66 1528 1537 "ocaml_lfsr/lfsr.ml" 66 1528 1540
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1664 "ocaml_lfsr/lfsr.ml" 70 1656 1666
+type(
+  'a list
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1667 "ocaml_lfsr/lfsr.ml" 70 1656 1668
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1669 "ocaml_lfsr/lfsr.ml" 70 1656 1670
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 65 1510 1524 "ocaml_lfsr/lfsr.ml" 65 1510 1525
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1671 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+type(
+  'a list
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 65 1510 1522 "ocaml_lfsr/lfsr.ml" 65 1510 1523
+)
+"ocaml_lfsr/lfsr.ml" 70 1656 1660 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+type(
+  'a list
+)
+"ocaml_lfsr/lfsr.ml" 66 1528 1529 "ocaml_lfsr/lfsr.ml" 70 1656 1672
+type(
+  'a list
+)
+"ocaml_lfsr/lfsr.ml" 74 1744 1748 "ocaml_lfsr/lfsr.ml" 74 1744 1754
+type(
+  int list -> int list -> int
+)
+ident(
+  def f2_sum "ocaml_lfsr/lfsr.ml" 84 1970 1970 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 74 1744 1755 "ocaml_lfsr/lfsr.ml" 74 1744 1757
+type(
+  int list
+)
+ident(
+  def l1 "ocaml_lfsr/lfsr.ml" 74 1744 1758 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+)
+"ocaml_lfsr/lfsr.ml" 74 1744 1758 "ocaml_lfsr/lfsr.ml" 74 1744 1760
+type(
+  int list
+)
+ident(
+  def l2 "ocaml_lfsr/lfsr.ml" 75 1763 1764 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+)
+"ocaml_lfsr/lfsr.ml" 75 1763 1772 "ocaml_lfsr/lfsr.ml" 75 1763 1775
+type(
+  int -> int list -> int list -> int
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 75 1763 1764 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+)
+"ocaml_lfsr/lfsr.ml" 75 1763 1776 "ocaml_lfsr/lfsr.ml" 75 1763 1779
+type(
+  int
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 75 1763 1780 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+)
+"ocaml_lfsr/lfsr.ml" 75 1763 1780 "ocaml_lfsr/lfsr.ml" 75 1763 1782
+type(
+  int list
+)
+ident(
+  def l1 "ocaml_lfsr/lfsr.ml" 75 1763 1783 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+)
+"ocaml_lfsr/lfsr.ml" 75 1763 1783 "ocaml_lfsr/lfsr.ml" 75 1763 1785
+type(
+  int list
+)
+ident(
+  def l2 "ocaml_lfsr/lfsr.ml" 76 1788 1790 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+)
+"ocaml_lfsr/lfsr.ml" 76 1788 1796 "ocaml_lfsr/lfsr.ml" 76 1788 1798
+type(
+  int list
+)
+ident(
+  int_ref l1 "ocaml_lfsr/lfsr.ml" 75 1763 1780 "ocaml_lfsr/lfsr.ml" 75 1763 1782
+)
+"ocaml_lfsr/lfsr.ml" 76 1788 1800 "ocaml_lfsr/lfsr.ml" 76 1788 1802
+type(
+  int list
+)
+ident(
+  int_ref l2 "ocaml_lfsr/lfsr.ml" 75 1763 1783 "ocaml_lfsr/lfsr.ml" 75 1763 1785
+)
+"ocaml_lfsr/lfsr.ml" 76 1788 1796 "ocaml_lfsr/lfsr.ml" 76 1788 1802
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 77 1808 1812 "ocaml_lfsr/lfsr.ml" 77 1808 1814
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 77 1808 1816 "ocaml_lfsr/lfsr.ml" 77 1808 1818
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 77 1808 1812 "ocaml_lfsr/lfsr.ml" 77 1808 1818
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 77 1808 1822 "ocaml_lfsr/lfsr.ml" 77 1808 1825
+type(
+  int
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 75 1763 1776 "ocaml_lfsr/lfsr.ml" 75 1763 1779
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1830 "ocaml_lfsr/lfsr.ml" 78 1826 1832
+type(
+  int
+)
+ident(
+  def h1 "ocaml_lfsr/lfsr.ml" 78 1826 1852 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1836 "ocaml_lfsr/lfsr.ml" 78 1826 1838
+type(
+  int list
+)
+ident(
+  def t1 "ocaml_lfsr/lfsr.ml" 78 1826 1852 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1830 "ocaml_lfsr/lfsr.ml" 78 1826 1838
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1840 "ocaml_lfsr/lfsr.ml" 78 1826 1842
+type(
+  int
+)
+ident(
+  def h2 "ocaml_lfsr/lfsr.ml" 78 1826 1852 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1846 "ocaml_lfsr/lfsr.ml" 78 1826 1848
+type(
+  int list
+)
+ident(
+  def t2 "ocaml_lfsr/lfsr.ml" 78 1826 1852 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1840 "ocaml_lfsr/lfsr.ml" 78 1826 1848
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1830 "ocaml_lfsr/lfsr.ml" 78 1826 1848
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1856 "ocaml_lfsr/lfsr.ml" 78 1826 1857
+type(
+  int
+)
+ident(
+  def c "ocaml_lfsr/lfsr.ml" 78 1826 1872 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1860 "ocaml_lfsr/lfsr.ml" 78 1826 1862
+type(
+  int
+)
+ident(
+  int_ref h1 "ocaml_lfsr/lfsr.ml" 78 1826 1830 "ocaml_lfsr/lfsr.ml" 78 1826 1832
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1863 "ocaml_lfsr/lfsr.ml" 78 1826 1865
+type(
+  int -> int -> int
+)
+ident(
+  int_ref *! "ocaml_lfsr/lfsr.ml" 25 377 381 "ocaml_lfsr/lfsr.ml" 25 377 387
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1866 "ocaml_lfsr/lfsr.ml" 78 1826 1868
+type(
+  int
+)
+ident(
+  int_ref h2 "ocaml_lfsr/lfsr.ml" 78 1826 1840 "ocaml_lfsr/lfsr.ml" 78 1826 1842
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1860 "ocaml_lfsr/lfsr.ml" 78 1826 1868
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1872 "ocaml_lfsr/lfsr.ml" 78 1826 1875
+type(
+  int -> int list -> int list -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 75 1763 1772 "ocaml_lfsr/lfsr.ml" 75 1763 1775
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1877 "ocaml_lfsr/lfsr.ml" 78 1826 1880
+type(
+  int
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 75 1763 1776 "ocaml_lfsr/lfsr.ml" 75 1763 1779
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1881 "ocaml_lfsr/lfsr.ml" 78 1826 1883
+type(
+  int -> int -> int
+)
+ident(
+  int_ref +! "ocaml_lfsr/lfsr.ml" 18 291 295 "ocaml_lfsr/lfsr.ml" 18 291 301
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1884 "ocaml_lfsr/lfsr.ml" 78 1826 1885
+type(
+  int
+)
+ident(
+  int_ref c "ocaml_lfsr/lfsr.ml" 78 1826 1856 "ocaml_lfsr/lfsr.ml" 78 1826 1857
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1876 "ocaml_lfsr/lfsr.ml" 78 1826 1886
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1887 "ocaml_lfsr/lfsr.ml" 78 1826 1889
+type(
+  int list
+)
+ident(
+  int_ref t1 "ocaml_lfsr/lfsr.ml" 78 1826 1836 "ocaml_lfsr/lfsr.ml" 78 1826 1838
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1890 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+type(
+  int list
+)
+ident(
+  int_ref t2 "ocaml_lfsr/lfsr.ml" 78 1826 1846 "ocaml_lfsr/lfsr.ml" 78 1826 1848
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1872 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 78 1826 1852 "ocaml_lfsr/lfsr.ml" 78 1826 1892
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 79 1893 1897 "ocaml_lfsr/lfsr.ml" 79 1893 1898
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 79 1893 1902 "ocaml_lfsr/lfsr.ml" 79 1893 1907
+type(
+  exn -> int
+)
+ident(
+  int_ref Stdlib.raise "stdlib.mli" 30 1602 1602 "stdlib.mli" 30 1602 1639
+)
+"ocaml_lfsr/lfsr.ml" 79 1893 1908 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+type(
+  exn
+)
+"ocaml_lfsr/lfsr.ml" 79 1893 1902 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 76 1788 1790 "ocaml_lfsr/lfsr.ml" 79 1893 1926
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 80 1927 1931 "ocaml_lfsr/lfsr.ml" 80 1927 1934
+type(
+  int -> int list -> int list -> int
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 75 1763 1772 "ocaml_lfsr/lfsr.ml" 75 1763 1775
+)
+"ocaml_lfsr/lfsr.ml" 80 1927 1935 "ocaml_lfsr/lfsr.ml" 80 1927 1936
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 80 1927 1937 "ocaml_lfsr/lfsr.ml" 80 1927 1939
+type(
+  int list
+)
+ident(
+  int_ref l1 "ocaml_lfsr/lfsr.ml" 74 1744 1755 "ocaml_lfsr/lfsr.ml" 74 1744 1757
+)
+"ocaml_lfsr/lfsr.ml" 80 1927 1940 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+type(
+  int list
+)
+ident(
+  int_ref l2 "ocaml_lfsr/lfsr.ml" 74 1744 1758 "ocaml_lfsr/lfsr.ml" 74 1744 1760
+)
+"ocaml_lfsr/lfsr.ml" 80 1927 1931 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 75 1763 1764 "ocaml_lfsr/lfsr.ml" 80 1927 1942
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 84 1970 1974 "ocaml_lfsr/lfsr.ml" 84 1970 1981
+type(
+  lfsr -> int list
+)
+ident(
+  def gx_calc "ocaml_lfsr/lfsr.ml" 98 2384 2384 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 84 1970 1982 "ocaml_lfsr/lfsr.ml" 84 1970 1986
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 85 1990 1991 "ocaml_lfsr/lfsr.ml" 94 2301 2318
+)
+"ocaml_lfsr/lfsr.ml" 85 1990 1999 "ocaml_lfsr/lfsr.ml" 85 1990 2002
+type(
+  int list -> int -> lfsr -> int list
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 85 1990 1991 "ocaml_lfsr/lfsr.ml" 94 2301 2318
+)
+"ocaml_lfsr/lfsr.ml" 85 1990 2003 "ocaml_lfsr/lfsr.ml" 85 1990 2007
+type(
+  int list
+)
+ident(
+  def poly "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+type(
+  int
+)
+ident(
+  def j "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 86 2017 2019 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2023 "ocaml_lfsr/lfsr.ml" 86 2017 2029
+type(
+  int list
+)
+ident(
+  def branch "ocaml_lfsr/lfsr.ml" 87 2088 2090 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2032 "ocaml_lfsr/lfsr.ml" 86 2017 2039
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref until_i "ocaml_lfsr/lfsr.ml" 65 1510 1514 "ocaml_lfsr/lfsr.ml" 65 1510 1521
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2040 "ocaml_lfsr/lfsr.ml" 86 2017 2044
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2040 "ocaml_lfsr/lfsr.ml" 86 2017 2051
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2052 "ocaml_lfsr/lfsr.ml" 86 2017 2053
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2032 "ocaml_lfsr/lfsr.ml" 86 2017 2053
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2058 "ocaml_lfsr/lfsr.ml" 86 2017 2062
+type(
+  int list
+)
+ident(
+  def base "ocaml_lfsr/lfsr.ml" 87 2088 2090 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2065 "ocaml_lfsr/lfsr.ml" 86 2017 2072
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref until_i "ocaml_lfsr/lfsr.ml" 65 1510 1514 "ocaml_lfsr/lfsr.ml" 65 1510 1521
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2073 "ocaml_lfsr/lfsr.ml" 86 2017 2077
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2073 "ocaml_lfsr/lfsr.ml" 86 2017 2082
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2083 "ocaml_lfsr/lfsr.ml" 86 2017 2084
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2065 "ocaml_lfsr/lfsr.ml" 86 2017 2084
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2097 "ocaml_lfsr/lfsr.ml" 87 2088 2105
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2106 "ocaml_lfsr/lfsr.ml" 87 2088 2112
+type(
+  int list
+)
+ident(
+  int_ref branch "ocaml_lfsr/lfsr.ml" 86 2017 2023 "ocaml_lfsr/lfsr.ml" 86 2017 2029
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2096 "ocaml_lfsr/lfsr.ml" 87 2088 2113
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2115 "ocaml_lfsr/lfsr.ml" 87 2088 2119
+type(
+  int list
+)
+ident(
+  int_ref base "ocaml_lfsr/lfsr.ml" 86 2017 2058 "ocaml_lfsr/lfsr.ml" 86 2017 2062
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2096 "ocaml_lfsr/lfsr.ml" 87 2088 2119
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2129 "ocaml_lfsr/lfsr.ml" 88 2125 2131
+type(
+  int list
+)
+ident(
+  def br "ocaml_lfsr/lfsr.ml" 88 2125 2140 "ocaml_lfsr/lfsr.ml" 88 2125 2172
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2133 "ocaml_lfsr/lfsr.ml" 88 2125 2134
+type(
+  int list
+)
+ident(
+  def b "ocaml_lfsr/lfsr.ml" 88 2125 2140 "ocaml_lfsr/lfsr.ml" 88 2125 2172
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2129 "ocaml_lfsr/lfsr.ml" 88 2125 2134
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2140 "ocaml_lfsr/lfsr.ml" 88 2125 2141
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2142 "ocaml_lfsr/lfsr.ml" 88 2125 2143
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2144 "ocaml_lfsr/lfsr.ml" 88 2125 2148
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2144 "ocaml_lfsr/lfsr.ml" 88 2125 2155
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2140 "ocaml_lfsr/lfsr.ml" 88 2125 2155
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2159 "ocaml_lfsr/lfsr.ml" 88 2125 2167
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2168 "ocaml_lfsr/lfsr.ml" 88 2125 2172
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 85 1990 2003 "ocaml_lfsr/lfsr.ml" 85 1990 2007
+)
+"ocaml_lfsr/lfsr.ml" 88 2125 2159 "ocaml_lfsr/lfsr.ml" 88 2125 2172
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2177 "ocaml_lfsr/lfsr.ml" 89 2173 2179
+type(
+  int list
+)
+ident(
+  def br "ocaml_lfsr/lfsr.ml" 89 2173 2186 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2181 "ocaml_lfsr/lfsr.ml" 89 2173 2182
+type(
+  int list
+)
+ident(
+  def b "ocaml_lfsr/lfsr.ml" 89 2173 2186 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2177 "ocaml_lfsr/lfsr.ml" 89 2173 2182
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2190 "ocaml_lfsr/lfsr.ml" 89 2173 2191
+type(
+  int
+)
+ident(
+  def s "ocaml_lfsr/lfsr.ml" 90 2210 2214 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2194 "ocaml_lfsr/lfsr.ml" 89 2173 2200
+type(
+  int list -> int list -> int
+)
+ident(
+  int_ref f2_sum "ocaml_lfsr/lfsr.ml" 74 1744 1748 "ocaml_lfsr/lfsr.ml" 74 1744 1754
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2201 "ocaml_lfsr/lfsr.ml" 89 2173 2203
+type(
+  int list
+)
+ident(
+  int_ref br "ocaml_lfsr/lfsr.ml" 89 2173 2177 "ocaml_lfsr/lfsr.ml" 89 2173 2179
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2204 "ocaml_lfsr/lfsr.ml" 89 2173 2205
+type(
+  int list
+)
+ident(
+  int_ref b "ocaml_lfsr/lfsr.ml" 89 2173 2181 "ocaml_lfsr/lfsr.ml" 89 2173 2182
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2194 "ocaml_lfsr/lfsr.ml" 89 2173 2205
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 90 2210 2217 "ocaml_lfsr/lfsr.ml" 90 2210 2218
+type(
+  int
+)
+ident(
+  int_ref s "ocaml_lfsr/lfsr.ml" 89 2173 2190 "ocaml_lfsr/lfsr.ml" 89 2173 2191
+)
+"ocaml_lfsr/lfsr.ml" 90 2210 2219 "ocaml_lfsr/lfsr.ml" 90 2210 2220
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 90 2210 2221 "ocaml_lfsr/lfsr.ml" 90 2210 2222
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 90 2210 2217 "ocaml_lfsr/lfsr.ml" 90 2210 2222
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2234 "ocaml_lfsr/lfsr.ml" 91 2229 2237
+type(
+  int list -> int -> lfsr -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 85 1990 1999 "ocaml_lfsr/lfsr.ml" 85 1990 2002
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2238 "ocaml_lfsr/lfsr.ml" 91 2229 2242
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 85 1990 2003 "ocaml_lfsr/lfsr.ml" 85 1990 2007
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2244 "ocaml_lfsr/lfsr.ml" 91 2229 2245
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2246 "ocaml_lfsr/lfsr.ml" 91 2229 2247
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2248 "ocaml_lfsr/lfsr.ml" 91 2229 2249
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2243 "ocaml_lfsr/lfsr.ml" 91 2229 2250
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2251 "ocaml_lfsr/lfsr.ml" 91 2229 2255
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+)
+"ocaml_lfsr/lfsr.ml" 91 2229 2234 "ocaml_lfsr/lfsr.ml" 91 2229 2255
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2272 "ocaml_lfsr/lfsr.ml" 93 2267 2275
+type(
+  int list -> int -> lfsr -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 85 1990 1999 "ocaml_lfsr/lfsr.ml" 85 1990 2002
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2277 "ocaml_lfsr/lfsr.ml" 93 2267 2278
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2282 "ocaml_lfsr/lfsr.ml" 93 2267 2286
+type(
+  int list
+)
+ident(
+  int_ref poly "ocaml_lfsr/lfsr.ml" 85 1990 2003 "ocaml_lfsr/lfsr.ml" 85 1990 2007
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2276 "ocaml_lfsr/lfsr.ml" 93 2267 2287
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2289 "ocaml_lfsr/lfsr.ml" 93 2267 2290
+type(
+  int
+)
+ident(
+  int_ref j "ocaml_lfsr/lfsr.ml" 85 1990 2008 "ocaml_lfsr/lfsr.ml" 85 1990 2009
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2291 "ocaml_lfsr/lfsr.ml" 93 2267 2292
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2293 "ocaml_lfsr/lfsr.ml" 93 2267 2294
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2288 "ocaml_lfsr/lfsr.ml" 93 2267 2295
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2296 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 85 1990 2010 "ocaml_lfsr/lfsr.ml" 85 1990 2014
+)
+"ocaml_lfsr/lfsr.ml" 93 2267 2272 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 90 2210 2214 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 89 2173 2186 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 87 2088 2090 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 86 2017 2019 "ocaml_lfsr/lfsr.ml" 93 2267 2300
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 94 2301 2305 "ocaml_lfsr/lfsr.ml" 94 2301 2308
+type(
+  int list -> int -> lfsr -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 85 1990 1999 "ocaml_lfsr/lfsr.ml" 85 1990 2002
+)
+"ocaml_lfsr/lfsr.ml" 94 2301 2309 "ocaml_lfsr/lfsr.ml" 94 2301 2311
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 94 2301 2312 "ocaml_lfsr/lfsr.ml" 94 2301 2313
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 94 2301 2314 "ocaml_lfsr/lfsr.ml" 94 2301 2318
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 84 1970 1982 "ocaml_lfsr/lfsr.ml" 84 1970 1986
+)
+"ocaml_lfsr/lfsr.ml" 94 2301 2305 "ocaml_lfsr/lfsr.ml" 94 2301 2318
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 85 1990 1991 "ocaml_lfsr/lfsr.ml" 94 2301 2318
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2388 "ocaml_lfsr/lfsr.ml" 98 2384 2403
+type(
+  lfsr -> int * int list * int list
+)
+ident(
+  def lgxrx_from_lfsr "ocaml_lfsr/lfsr.ml" 101 2560 2560 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2404 "ocaml_lfsr/lfsr.ml" 98 2384 2408
+type(
+  lfsr
+)
+ident(
+  def lfsr "ocaml_lfsr/lfsr.ml" 98 2384 2411 "ocaml_lfsr/lfsr.ml" 98 2384 2470
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2412 "ocaml_lfsr/lfsr.ml" 98 2384 2416
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 98 2384 2404 "ocaml_lfsr/lfsr.ml" 98 2384 2408
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2412 "ocaml_lfsr/lfsr.ml" 98 2384 2423
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2426 "ocaml_lfsr/lfsr.ml" 98 2384 2433
+type(
+  lfsr -> int list
+)
+ident(
+  int_ref gx_calc "ocaml_lfsr/lfsr.ml" 84 1970 1974 "ocaml_lfsr/lfsr.ml" 84 1970 1981
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2434 "ocaml_lfsr/lfsr.ml" 98 2384 2438
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 98 2384 2404 "ocaml_lfsr/lfsr.ml" 98 2384 2408
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2425 "ocaml_lfsr/lfsr.ml" 98 2384 2439
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2442 "ocaml_lfsr/lfsr.ml" 98 2384 2463
+type(
+  lfsr -> int list
+)
+ident(
+  int_ref poly_from_lfsr_branch "ocaml_lfsr/lfsr.ml" 56 1211 1215 "ocaml_lfsr/lfsr.ml" 56 1211 1236
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2464 "ocaml_lfsr/lfsr.ml" 98 2384 2468
+type(
+  lfsr
+)
+ident(
+  int_ref lfsr "ocaml_lfsr/lfsr.ml" 98 2384 2404 "ocaml_lfsr/lfsr.ml" 98 2384 2408
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2441 "ocaml_lfsr/lfsr.ml" 98 2384 2469
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 98 2384 2411 "ocaml_lfsr/lfsr.ml" 98 2384 2470
+type(
+  int * int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2564 "ocaml_lfsr/lfsr.ml" 101 2560 2576
+type(
+  'a * 'b * 'c -> 'a
+)
+ident(
+  def lgxrx_length "ocaml_lfsr/lfsr.ml" 102 2595 2595 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2578 "ocaml_lfsr/lfsr.ml" 101 2560 2579
+type(
+  'a
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 101 2560 2591 "ocaml_lfsr/lfsr.ml" 101 2560 2592
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2581 "ocaml_lfsr/lfsr.ml" 101 2560 2583
+type(
+  'b
+)
+ident(
+  def gx "ocaml_lfsr/lfsr.ml" 101 2560 2591 "ocaml_lfsr/lfsr.ml" 101 2560 2592
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2585 "ocaml_lfsr/lfsr.ml" 101 2560 2587
+type(
+  'c
+)
+ident(
+  def rx "ocaml_lfsr/lfsr.ml" 101 2560 2591 "ocaml_lfsr/lfsr.ml" 101 2560 2592
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2577 "ocaml_lfsr/lfsr.ml" 101 2560 2588
+type(
+  'a * 'b * 'c
+)
+"ocaml_lfsr/lfsr.ml" 101 2560 2591 "ocaml_lfsr/lfsr.ml" 101 2560 2592
+type(
+  'a
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 101 2560 2578 "ocaml_lfsr/lfsr.ml" 101 2560 2579
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2599 "ocaml_lfsr/lfsr.ml" 102 2595 2607
+type(
+  'a * 'b * 'c -> 'b
+)
+ident(
+  def lgxrx_gx "ocaml_lfsr/lfsr.ml" 103 2627 2627 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2609 "ocaml_lfsr/lfsr.ml" 102 2595 2610
+type(
+  'a
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 102 2595 2622 "ocaml_lfsr/lfsr.ml" 102 2595 2624
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2612 "ocaml_lfsr/lfsr.ml" 102 2595 2614
+type(
+  'b
+)
+ident(
+  def gx "ocaml_lfsr/lfsr.ml" 102 2595 2622 "ocaml_lfsr/lfsr.ml" 102 2595 2624
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2616 "ocaml_lfsr/lfsr.ml" 102 2595 2618
+type(
+  'c
+)
+ident(
+  def rx "ocaml_lfsr/lfsr.ml" 102 2595 2622 "ocaml_lfsr/lfsr.ml" 102 2595 2624
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2608 "ocaml_lfsr/lfsr.ml" 102 2595 2619
+type(
+  'a * 'b * 'c
+)
+"ocaml_lfsr/lfsr.ml" 102 2595 2622 "ocaml_lfsr/lfsr.ml" 102 2595 2624
+type(
+  'b
+)
+ident(
+  int_ref gx "ocaml_lfsr/lfsr.ml" 102 2595 2612 "ocaml_lfsr/lfsr.ml" 102 2595 2614
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2631 "ocaml_lfsr/lfsr.ml" 103 2627 2639
+type(
+  'a * 'b * 'c -> 'c
+)
+ident(
+  def lgxrx_rx "ocaml_lfsr/lfsr.ml" 107 2739 2739 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2641 "ocaml_lfsr/lfsr.ml" 103 2627 2642
+type(
+  'a
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 103 2627 2654 "ocaml_lfsr/lfsr.ml" 103 2627 2656
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2644 "ocaml_lfsr/lfsr.ml" 103 2627 2646
+type(
+  'b
+)
+ident(
+  def gx "ocaml_lfsr/lfsr.ml" 103 2627 2654 "ocaml_lfsr/lfsr.ml" 103 2627 2656
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2648 "ocaml_lfsr/lfsr.ml" 103 2627 2650
+type(
+  'c
+)
+ident(
+  def rx "ocaml_lfsr/lfsr.ml" 103 2627 2654 "ocaml_lfsr/lfsr.ml" 103 2627 2656
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2640 "ocaml_lfsr/lfsr.ml" 103 2627 2651
+type(
+  'a * 'b * 'c
+)
+"ocaml_lfsr/lfsr.ml" 103 2627 2654 "ocaml_lfsr/lfsr.ml" 103 2627 2656
+type(
+  'c
+)
+ident(
+  int_ref rx "ocaml_lfsr/lfsr.ml" 103 2627 2648 "ocaml_lfsr/lfsr.ml" 103 2627 2650
+)
+"ocaml_lfsr/lfsr.ml" 107 2739 2743 "ocaml_lfsr/lfsr.ml" 107 2739 2754
+type(
+  int * 'a * int list -> int list
+)
+ident(
+  def branch_calc "ocaml_lfsr/lfsr.ml" 112 2918 2918 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 107 2739 2755 "ocaml_lfsr/lfsr.ml" 107 2739 2760
+type(
+  int * 'a * int list
+)
+ident(
+  def lgxrx "ocaml_lfsr/lfsr.ml" 108 2763 2764 "ocaml_lfsr/lfsr.ml" 108 2763 2829
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2768 "ocaml_lfsr/lfsr.ml" 108 2763 2770
+type(
+  int list
+)
+ident(
+  def rx "ocaml_lfsr/lfsr.ml" 108 2763 2791 "ocaml_lfsr/lfsr.ml" 108 2763 2829
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2773 "ocaml_lfsr/lfsr.ml" 108 2763 2781
+type(
+  int * 'a * int list -> int list
+)
+ident(
+  int_ref lgxrx_rx "ocaml_lfsr/lfsr.ml" 103 2627 2631 "ocaml_lfsr/lfsr.ml" 103 2627 2639
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2782 "ocaml_lfsr/lfsr.ml" 108 2763 2787
+type(
+  int * 'a * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 107 2739 2755 "ocaml_lfsr/lfsr.ml" 107 2739 2760
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2773 "ocaml_lfsr/lfsr.ml" 108 2763 2787
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2791 "ocaml_lfsr/lfsr.ml" 108 2763 2805
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref Utils.poly_to_binary "ocaml_lfsr/utils.ml" 80 2402 2406 "ocaml_lfsr/utils.ml" 80 2402 2420
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2806 "ocaml_lfsr/lfsr.ml" 108 2763 2808
+type(
+  int list
+)
+ident(
+  int_ref rx "ocaml_lfsr/lfsr.ml" 108 2763 2768 "ocaml_lfsr/lfsr.ml" 108 2763 2770
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2810 "ocaml_lfsr/lfsr.ml" 108 2763 2822
+type(
+  int * 'a * int list -> int
+)
+ident(
+  int_ref lgxrx_length "ocaml_lfsr/lfsr.ml" 101 2560 2564 "ocaml_lfsr/lfsr.ml" 101 2560 2576
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2823 "ocaml_lfsr/lfsr.ml" 108 2763 2828
+type(
+  int * 'a * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 107 2739 2755 "ocaml_lfsr/lfsr.ml" 107 2739 2760
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2809 "ocaml_lfsr/lfsr.ml" 108 2763 2829
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2791 "ocaml_lfsr/lfsr.ml" 108 2763 2829
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 108 2763 2764 "ocaml_lfsr/lfsr.ml" 108 2763 2829
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 112 2918 2922 "ocaml_lfsr/lfsr.ml" 112 2918 2931
+type(
+  int * int list * int list -> int list
+)
+ident(
+  def base_calc "ocaml_lfsr/lfsr.ml" 120 3242 3242 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 112 2918 2932 "ocaml_lfsr/lfsr.ml" 112 2918 2937
+type(
+  int * int list * int list
+)
+ident(
+  def lgxrx "ocaml_lfsr/lfsr.ml" 113 2940 2941 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2945 "ocaml_lfsr/lfsr.ml" 113 2940 2947
+type(
+  int list
+)
+ident(
+  def gx "ocaml_lfsr/lfsr.ml" 114 2996 2997 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2951 "ocaml_lfsr/lfsr.ml" 113 2940 2959
+type(
+  int * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_gx "ocaml_lfsr/lfsr.ml" 102 2595 2599 "ocaml_lfsr/lfsr.ml" 102 2595 2607
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2960 "ocaml_lfsr/lfsr.ml" 113 2940 2965
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 112 2918 2932 "ocaml_lfsr/lfsr.ml" 112 2918 2937
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2950 "ocaml_lfsr/lfsr.ml" 113 2940 2966
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2971 "ocaml_lfsr/lfsr.ml" 113 2940 2973
+type(
+  int list
+)
+ident(
+  def rx "ocaml_lfsr/lfsr.ml" 114 2996 2997 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2977 "ocaml_lfsr/lfsr.ml" 113 2940 2985
+type(
+  int * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_rx "ocaml_lfsr/lfsr.ml" 103 2627 2631 "ocaml_lfsr/lfsr.ml" 103 2627 2639
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2986 "ocaml_lfsr/lfsr.ml" 113 2940 2991
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 112 2918 2932 "ocaml_lfsr/lfsr.ml" 112 2918 2937
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2976 "ocaml_lfsr/lfsr.ml" 113 2940 2992
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3002 "ocaml_lfsr/lfsr.ml" 114 2996 3003
+type(
+  int list
+)
+ident(
+  def a "ocaml_lfsr/lfsr.ml" 115 3057 3058 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3005 "ocaml_lfsr/lfsr.ml" 114 2996 3006
+type(
+  int list
+)
+ident(
+  def b "ocaml_lfsr/lfsr.ml" 115 3057 3058 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3001 "ocaml_lfsr/lfsr.ml" 114 2996 3007
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3010 "ocaml_lfsr/lfsr.ml" 114 2996 3018
+type(
+  int list -> int list -> int list * int list
+)
+ident(
+  int_ref Main.quotient "ocaml_lfsr/main.ml" 61 1959 1963 "ocaml_lfsr/main.ml" 61 1959 1971
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3019 "ocaml_lfsr/lfsr.ml" 114 2996 3021
+type(
+  int list
+)
+ident(
+  int_ref gx "ocaml_lfsr/lfsr.ml" 113 2940 2945 "ocaml_lfsr/lfsr.ml" 113 2940 2947
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3022 "ocaml_lfsr/lfsr.ml" 114 2996 3024
+type(
+  int list
+)
+ident(
+  int_ref rx "ocaml_lfsr/lfsr.ml" 113 2940 2971 "ocaml_lfsr/lfsr.ml" 113 2940 2973
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3010 "ocaml_lfsr/lfsr.ml" 114 2996 3024
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3029 "ocaml_lfsr/lfsr.ml" 114 2996 3032
+type(
+  int
+)
+ident(
+  def len "ocaml_lfsr/lfsr.ml" 115 3057 3058 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3035 "ocaml_lfsr/lfsr.ml" 114 2996 3047
+type(
+  int * int list * int list -> int
+)
+ident(
+  int_ref lgxrx_length "ocaml_lfsr/lfsr.ml" 101 2560 2564 "ocaml_lfsr/lfsr.ml" 101 2560 2576
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3048 "ocaml_lfsr/lfsr.ml" 114 2996 3053
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 112 2918 2932 "ocaml_lfsr/lfsr.ml" 112 2918 2937
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 3035 "ocaml_lfsr/lfsr.ml" 114 2996 3053
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3062 "ocaml_lfsr/lfsr.ml" 115 3057 3063
+type(
+  int list
+)
+ident(
+  def s "ocaml_lfsr/lfsr.ml" 116 3134 3135 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3066 "ocaml_lfsr/lfsr.ml" 115 3057 3074
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref Utils.moduloXn "ocaml_lfsr/utils.ml" 56 1694 1698 "ocaml_lfsr/utils.ml" 56 1694 1706
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3076 "ocaml_lfsr/lfsr.ml" 115 3057 3084
+type(
+  int list -> int list -> int list
+)
+ident(
+  int_ref Main.sum_poly "ocaml_lfsr/main.ml" 4 73 77 "ocaml_lfsr/main.ml" 4 73 85
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3085 "ocaml_lfsr/lfsr.ml" 115 3057 3086
+type(
+  int list
+)
+ident(
+  int_ref a "ocaml_lfsr/lfsr.ml" 114 2996 3002 "ocaml_lfsr/lfsr.ml" 114 2996 3003
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3088 "ocaml_lfsr/lfsr.ml" 115 3057 3101
+type(
+  int list -> int list -> int list
+)
+ident(
+  int_ref Main.multKaratsuba "ocaml_lfsr/main.ml" 30 909 917 "ocaml_lfsr/main.ml" 30 909 930
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3102 "ocaml_lfsr/lfsr.ml" 115 3057 3103
+type(
+  int list
+)
+ident(
+  int_ref b "ocaml_lfsr/lfsr.ml" 114 2996 3005 "ocaml_lfsr/lfsr.ml" 114 2996 3006
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3105 "ocaml_lfsr/lfsr.ml" 115 3057 3116
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref Main.inverse_mod "ocaml_lfsr/main.ml" 43 1406 1410 "ocaml_lfsr/main.ml" 43 1406 1421
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3117 "ocaml_lfsr/lfsr.ml" 115 3057 3119
+type(
+  int list
+)
+ident(
+  int_ref rx "ocaml_lfsr/lfsr.ml" 113 2940 2971 "ocaml_lfsr/lfsr.ml" 113 2940 2973
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3120 "ocaml_lfsr/lfsr.ml" 115 3057 3123
+type(
+  int
+)
+ident(
+  int_ref len "ocaml_lfsr/lfsr.ml" 114 2996 3029 "ocaml_lfsr/lfsr.ml" 114 2996 3032
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3104 "ocaml_lfsr/lfsr.ml" 115 3057 3124
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3087 "ocaml_lfsr/lfsr.ml" 115 3057 3125
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3075 "ocaml_lfsr/lfsr.ml" 115 3057 3126
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3127 "ocaml_lfsr/lfsr.ml" 115 3057 3130
+type(
+  int
+)
+ident(
+  int_ref len "ocaml_lfsr/lfsr.ml" 114 2996 3029 "ocaml_lfsr/lfsr.ml" 114 2996 3032
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3066 "ocaml_lfsr/lfsr.ml" 115 3057 3130
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3135 "ocaml_lfsr/lfsr.ml" 116 3134 3149
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref Utils.poly_to_binary "ocaml_lfsr/utils.ml" 80 2402 2406 "ocaml_lfsr/utils.ml" 80 2402 2420
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3150 "ocaml_lfsr/lfsr.ml" 116 3134 3151
+type(
+  int list
+)
+ident(
+  int_ref s "ocaml_lfsr/lfsr.ml" 115 3057 3062 "ocaml_lfsr/lfsr.ml" 115 3057 3063
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3153 "ocaml_lfsr/lfsr.ml" 116 3134 3165
+type(
+  int * int list * int list -> int
+)
+ident(
+  int_ref lgxrx_length "ocaml_lfsr/lfsr.ml" 101 2560 2564 "ocaml_lfsr/lfsr.ml" 101 2560 2576
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3166 "ocaml_lfsr/lfsr.ml" 116 3134 3171
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 112 2918 2932 "ocaml_lfsr/lfsr.ml" 112 2918 2937
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3152 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 116 3134 3135 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 115 3057 3058 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 114 2996 2997 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 113 2940 2941 "ocaml_lfsr/lfsr.ml" 116 3134 3172
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3246 "ocaml_lfsr/lfsr.ml" 120 3242 3261
+type(
+  int * int list * int list -> lfsr
+)
+ident(
+  def lfsr_from_lgxrx "ocaml_lfsr/lfsr.ml" 124 3404 3404 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3262 "ocaml_lfsr/lfsr.ml" 120 3242 3267
+type(
+  int * int list * int list
+)
+ident(
+  def lgxrx "ocaml_lfsr/lfsr.ml" 120 3242 3270 "ocaml_lfsr/lfsr.ml" 120 3242 3351
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3279 "ocaml_lfsr/lfsr.ml" 120 3242 3291
+type(
+  int * int list * int list -> int
+)
+ident(
+  int_ref lgxrx_length "ocaml_lfsr/lfsr.ml" 101 2560 2564 "ocaml_lfsr/lfsr.ml" 101 2560 2576
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3292 "ocaml_lfsr/lfsr.ml" 120 3242 3297
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 120 3242 3262 "ocaml_lfsr/lfsr.ml" 120 3242 3267
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3278 "ocaml_lfsr/lfsr.ml" 120 3242 3298
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3306 "ocaml_lfsr/lfsr.ml" 120 3242 3315
+type(
+  int * int list * int list -> int list
+)
+ident(
+  int_ref base_calc "ocaml_lfsr/lfsr.ml" 112 2918 2922 "ocaml_lfsr/lfsr.ml" 112 2918 2931
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3316 "ocaml_lfsr/lfsr.ml" 120 3242 3321
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 120 3242 3262 "ocaml_lfsr/lfsr.ml" 120 3242 3267
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3305 "ocaml_lfsr/lfsr.ml" 120 3242 3322
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3332 "ocaml_lfsr/lfsr.ml" 120 3242 3343
+type(
+  int * int list * int list -> int list
+)
+ident(
+  int_ref branch_calc "ocaml_lfsr/lfsr.ml" 107 2739 2743 "ocaml_lfsr/lfsr.ml" 107 2739 2754
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3344 "ocaml_lfsr/lfsr.ml" 120 3242 3349
+type(
+  int * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 120 3242 3262 "ocaml_lfsr/lfsr.ml" 120 3242 3267
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3331 "ocaml_lfsr/lfsr.ml" 120 3242 3350
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 120 3242 3270 "ocaml_lfsr/lfsr.ml" 120 3242 3351
+type(
+  lfsr
+)
+"ocaml_lfsr/lfsr.ml" 124 3404 3408 "ocaml_lfsr/lfsr.ml" 124 3404 3422
+type(
+  'a * int list * int list -> int * int list * int list
+)
+ident(
+  def smallest_lgxrx "ocaml_lfsr/lfsr.ml" 132 3761 3761 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 124 3404 3423 "ocaml_lfsr/lfsr.ml" 124 3404 3428
+type(
+  'a * int list * int list
+)
+ident(
+  def lgxrx "ocaml_lfsr/lfsr.ml" 126 3491 3492 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3496 "ocaml_lfsr/lfsr.ml" 126 3491 3498
+type(
+  int list
+)
+ident(
+  def tx "ocaml_lfsr/lfsr.ml" 127 3546 3547 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3501 "ocaml_lfsr/lfsr.ml" 126 3491 3508
+type(
+  int list -> int list -> int list
+)
+ident(
+  int_ref Main.euclide "ocaml_lfsr/main.ml" 79 2498 2506 "ocaml_lfsr/main.ml" 79 2498 2513
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3510 "ocaml_lfsr/lfsr.ml" 126 3491 3518
+type(
+  'a * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_gx "ocaml_lfsr/lfsr.ml" 102 2595 2599 "ocaml_lfsr/lfsr.ml" 102 2595 2607
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3519 "ocaml_lfsr/lfsr.ml" 126 3491 3524
+type(
+  'a * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 124 3404 3423 "ocaml_lfsr/lfsr.ml" 124 3404 3428
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3509 "ocaml_lfsr/lfsr.ml" 126 3491 3525
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3527 "ocaml_lfsr/lfsr.ml" 126 3491 3535
+type(
+  'a * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_rx "ocaml_lfsr/lfsr.ml" 103 2627 2631 "ocaml_lfsr/lfsr.ml" 103 2627 2639
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3536 "ocaml_lfsr/lfsr.ml" 126 3491 3541
+type(
+  'a * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 124 3404 3423 "ocaml_lfsr/lfsr.ml" 124 3404 3428
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3526 "ocaml_lfsr/lfsr.ml" 126 3491 3542
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3501 "ocaml_lfsr/lfsr.ml" 126 3491 3542
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3552 "ocaml_lfsr/lfsr.ml" 127 3546 3554
+type(
+  int list
+)
+ident(
+  def q1 "ocaml_lfsr/lfsr.ml" 128 3638 3639 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3556 "ocaml_lfsr/lfsr.ml" 127 3546 3558
+type(
+  int list
+)
+ident(
+  def r1 "ocaml_lfsr/lfsr.ml" 128 3638 3639 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3551 "ocaml_lfsr/lfsr.ml" 127 3546 3559
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3562 "ocaml_lfsr/lfsr.ml" 127 3546 3570
+type(
+  int list -> int list -> int list * int list
+)
+ident(
+  int_ref Main.quotient "ocaml_lfsr/main.ml" 61 1959 1963 "ocaml_lfsr/main.ml" 61 1959 1971
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3572 "ocaml_lfsr/lfsr.ml" 127 3546 3580
+type(
+  'a * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_gx "ocaml_lfsr/lfsr.ml" 102 2595 2599 "ocaml_lfsr/lfsr.ml" 102 2595 2607
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3581 "ocaml_lfsr/lfsr.ml" 127 3546 3586
+type(
+  'a * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 124 3404 3423 "ocaml_lfsr/lfsr.ml" 124 3404 3428
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3571 "ocaml_lfsr/lfsr.ml" 127 3546 3587
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3588 "ocaml_lfsr/lfsr.ml" 127 3546 3590
+type(
+  int list
+)
+ident(
+  int_ref tx "ocaml_lfsr/lfsr.ml" 126 3491 3496 "ocaml_lfsr/lfsr.ml" 126 3491 3498
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3562 "ocaml_lfsr/lfsr.ml" 127 3546 3590
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3596 "ocaml_lfsr/lfsr.ml" 127 3546 3598
+type(
+  int list
+)
+ident(
+  def q2 "ocaml_lfsr/lfsr.ml" 128 3638 3639 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3600 "ocaml_lfsr/lfsr.ml" 127 3546 3602
+type(
+  int list
+)
+ident(
+  def r2 "ocaml_lfsr/lfsr.ml" 128 3638 3639 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3595 "ocaml_lfsr/lfsr.ml" 127 3546 3603
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3606 "ocaml_lfsr/lfsr.ml" 127 3546 3614
+type(
+  int list -> int list -> int list * int list
+)
+ident(
+  int_ref Main.quotient "ocaml_lfsr/main.ml" 61 1959 1963 "ocaml_lfsr/main.ml" 61 1959 1971
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3616 "ocaml_lfsr/lfsr.ml" 127 3546 3624
+type(
+  'a * int list * int list -> int list
+)
+ident(
+  int_ref lgxrx_rx "ocaml_lfsr/lfsr.ml" 103 2627 2631 "ocaml_lfsr/lfsr.ml" 103 2627 2639
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3625 "ocaml_lfsr/lfsr.ml" 127 3546 3630
+type(
+  'a * int list * int list
+)
+ident(
+  int_ref lgxrx "ocaml_lfsr/lfsr.ml" 124 3404 3423 "ocaml_lfsr/lfsr.ml" 124 3404 3428
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3615 "ocaml_lfsr/lfsr.ml" 127 3546 3631
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3632 "ocaml_lfsr/lfsr.ml" 127 3546 3634
+type(
+  int list
+)
+ident(
+  int_ref tx "ocaml_lfsr/lfsr.ml" 126 3491 3496 "ocaml_lfsr/lfsr.ml" 126 3491 3498
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3606 "ocaml_lfsr/lfsr.ml" 127 3546 3634
+type(
+  int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3641 "ocaml_lfsr/lfsr.ml" 128 3638 3647
+type(
+  int list -> int
+)
+ident(
+  int_ref Utils.degree "ocaml_lfsr/utils.ml" 12 556 560 "ocaml_lfsr/utils.ml" 12 556 566
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3648 "ocaml_lfsr/lfsr.ml" 128 3638 3650
+type(
+  int list
+)
+ident(
+  int_ref q2 "ocaml_lfsr/lfsr.ml" 127 3546 3596 "ocaml_lfsr/lfsr.ml" 127 3546 3598
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3640 "ocaml_lfsr/lfsr.ml" 128 3638 3651
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3652 "ocaml_lfsr/lfsr.ml" 128 3638 3653
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3654 "ocaml_lfsr/lfsr.ml" 128 3638 3655
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3640 "ocaml_lfsr/lfsr.ml" 128 3638 3655
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3657 "ocaml_lfsr/lfsr.ml" 128 3638 3659
+type(
+  int list
+)
+ident(
+  int_ref q1 "ocaml_lfsr/lfsr.ml" 127 3546 3552 "ocaml_lfsr/lfsr.ml" 127 3546 3554
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3661 "ocaml_lfsr/lfsr.ml" 128 3638 3663
+type(
+  int list
+)
+ident(
+  int_ref q2 "ocaml_lfsr/lfsr.ml" 127 3546 3596 "ocaml_lfsr/lfsr.ml" 127 3546 3598
+)
+"ocaml_lfsr/lfsr.ml" 128 3638 3639 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+type(
+  int * int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 127 3546 3547 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+type(
+  int * int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 126 3491 3492 "ocaml_lfsr/lfsr.ml" 128 3638 3664
+type(
+  int * int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 132 3761 3765 "ocaml_lfsr/lfsr.ml" 132 3761 3776
+type(
+  int -> int list
+)
+ident(
+  def random_poly "ocaml_lfsr/lfsr.ml" 141 4054 4054 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 132 3761 3777 "ocaml_lfsr/lfsr.ml" 132 3761 3778
+type(
+  int
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 133 3782 3783 "ocaml_lfsr/lfsr.ml" 136 3952 3966
+)
+"ocaml_lfsr/lfsr.ml" 133 3782 3791 "ocaml_lfsr/lfsr.ml" 133 3782 3794
+type(
+  int list -> int -> int -> int list
+)
+ident(
+  def aux "ocaml_lfsr/lfsr.ml" 133 3782 3783 "ocaml_lfsr/lfsr.ml" 136 3952 3966
+)
+"ocaml_lfsr/lfsr.ml" 133 3782 3795 "ocaml_lfsr/lfsr.ml" 133 3782 3798
+type(
+  int list
+)
+ident(
+  def acc "ocaml_lfsr/lfsr.ml" 133 3782 3799 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+)
+"ocaml_lfsr/lfsr.ml" 133 3782 3799 "ocaml_lfsr/lfsr.ml" 133 3782 3800
+type(
+  int
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 133 3782 3803 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3816 "ocaml_lfsr/lfsr.ml" 134 3812 3817
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 134 3812 3823 "ocaml_lfsr/lfsr.ml" 134 3812 3844
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3823 "ocaml_lfsr/lfsr.ml" 134 3812 3824
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 134 3812 3816 "ocaml_lfsr/lfsr.ml" 134 3812 3817
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3825 "ocaml_lfsr/lfsr.ml" 134 3812 3826
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3827 "ocaml_lfsr/lfsr.ml" 134 3812 3828
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 133 3782 3799 "ocaml_lfsr/lfsr.ml" 133 3782 3800
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3823 "ocaml_lfsr/lfsr.ml" 134 3812 3828
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3832 "ocaml_lfsr/lfsr.ml" 134 3812 3840
+type(
+  int list -> int list
+)
+ident(
+  int_ref Stdlib.List.rev "list.mli" 76 3214 3214 "list.mli" 76 3214 3242
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3841 "ocaml_lfsr/lfsr.ml" 134 3812 3844
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 133 3782 3795 "ocaml_lfsr/lfsr.ml" 133 3782 3798
+)
+"ocaml_lfsr/lfsr.ml" 134 3812 3832 "ocaml_lfsr/lfsr.ml" 134 3812 3844
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3849 "ocaml_lfsr/lfsr.ml" 135 3845 3850
+type(
+  int
+)
+ident(
+  def i "ocaml_lfsr/lfsr.ml" 135 3845 3854 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3858 "ocaml_lfsr/lfsr.ml" 135 3845 3859
+type(
+  bool
+)
+ident(
+  def b "ocaml_lfsr/lfsr.ml" 135 3845 3880 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3862 "ocaml_lfsr/lfsr.ml" 135 3845 3873
+type(
+  unit -> bool
+)
+ident(
+  int_ref Stdlib.Random.bool "random.mli" 63 2853 2853 "random.mli" 63 2853 2876
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3874 "ocaml_lfsr/lfsr.ml" 135 3845 3876
+type(
+  unit
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3862 "ocaml_lfsr/lfsr.ml" 135 3845 3876
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3883 "ocaml_lfsr/lfsr.ml" 135 3845 3884
+type(
+  bool
+)
+ident(
+  int_ref b "ocaml_lfsr/lfsr.ml" 135 3845 3858 "ocaml_lfsr/lfsr.ml" 135 3845 3859
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3885 "ocaml_lfsr/lfsr.ml" 135 3845 3886
+type(
+  bool -> bool -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3887 "ocaml_lfsr/lfsr.ml" 135 3845 3891
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3883 "ocaml_lfsr/lfsr.ml" 135 3845 3891
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3897 "ocaml_lfsr/lfsr.ml" 135 3845 3900
+type(
+  int list -> int -> int -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 133 3782 3791 "ocaml_lfsr/lfsr.ml" 133 3782 3794
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3902 "ocaml_lfsr/lfsr.ml" 135 3845 3903
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3907 "ocaml_lfsr/lfsr.ml" 135 3845 3910
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 133 3782 3795 "ocaml_lfsr/lfsr.ml" 133 3782 3798
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3901 "ocaml_lfsr/lfsr.ml" 135 3845 3911
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3912 "ocaml_lfsr/lfsr.ml" 135 3845 3913
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 133 3782 3799 "ocaml_lfsr/lfsr.ml" 133 3782 3800
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3915 "ocaml_lfsr/lfsr.ml" 135 3845 3916
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 135 3845 3849 "ocaml_lfsr/lfsr.ml" 135 3845 3850
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3917 "ocaml_lfsr/lfsr.ml" 135 3845 3918
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3919 "ocaml_lfsr/lfsr.ml" 135 3845 3920
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3914 "ocaml_lfsr/lfsr.ml" 135 3845 3921
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3897 "ocaml_lfsr/lfsr.ml" 135 3845 3921
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3927 "ocaml_lfsr/lfsr.ml" 135 3845 3930
+type(
+  int list -> int -> int -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 133 3782 3791 "ocaml_lfsr/lfsr.ml" 133 3782 3794
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3932 "ocaml_lfsr/lfsr.ml" 135 3845 3933
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3937 "ocaml_lfsr/lfsr.ml" 135 3845 3940
+type(
+  int list
+)
+ident(
+  int_ref acc "ocaml_lfsr/lfsr.ml" 133 3782 3795 "ocaml_lfsr/lfsr.ml" 133 3782 3798
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3931 "ocaml_lfsr/lfsr.ml" 135 3845 3941
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3942 "ocaml_lfsr/lfsr.ml" 135 3845 3943
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 133 3782 3799 "ocaml_lfsr/lfsr.ml" 133 3782 3800
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3945 "ocaml_lfsr/lfsr.ml" 135 3845 3946
+type(
+  int
+)
+ident(
+  int_ref i "ocaml_lfsr/lfsr.ml" 135 3845 3849 "ocaml_lfsr/lfsr.ml" 135 3845 3850
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3947 "ocaml_lfsr/lfsr.ml" 135 3845 3948
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( + ) "stdlib.mli" 338 13360 13360 "stdlib.mli" 338 13360 13406
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3949 "ocaml_lfsr/lfsr.ml" 135 3845 3950
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3944 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3927 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3880 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 135 3845 3854 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 133 3782 3803 "ocaml_lfsr/lfsr.ml" 135 3845 3951
+type(
+  int -> int list
+)
+"ocaml_lfsr/lfsr.ml" 136 3952 3956 "ocaml_lfsr/lfsr.ml" 136 3952 3959
+type(
+  int list -> int -> int -> int list
+)
+ident(
+  int_ref aux "ocaml_lfsr/lfsr.ml" 133 3782 3791 "ocaml_lfsr/lfsr.ml" 133 3782 3794
+)
+"ocaml_lfsr/lfsr.ml" 136 3952 3960 "ocaml_lfsr/lfsr.ml" 136 3952 3962
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 136 3952 3963 "ocaml_lfsr/lfsr.ml" 136 3952 3964
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 132 3761 3777 "ocaml_lfsr/lfsr.ml" 132 3761 3778
+)
+"ocaml_lfsr/lfsr.ml" 136 3952 3965 "ocaml_lfsr/lfsr.ml" 136 3952 3966
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 136 3952 3956 "ocaml_lfsr/lfsr.ml" 136 3952 3966
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 133 3782 3783 "ocaml_lfsr/lfsr.ml" 136 3952 3966
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 141 4054 4062 "ocaml_lfsr/lfsr.ml" 141 4054 4070
+type(
+  int -> lfsr
+)
+ident(
+  def bon_lfsr "ocaml_lfsr/lfsr.ml" 141 4054 4054 "ocaml_lfsr/lfsr.ml" 0 0 -1
+)
+"ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+type(
+  int
+)
+ident(
+  def l "ocaml_lfsr/lfsr.ml" 142 4075 4076 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4080 "ocaml_lfsr/lfsr.ml" 142 4075 4083
+type(
+  int list
+)
+ident(
+  def rxp "ocaml_lfsr/lfsr.ml" 143 4154 4155 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4086 "ocaml_lfsr/lfsr.ml" 142 4075 4094
+type(
+  int -> int list
+)
+ident(
+  int_ref Main.primitif "ocaml_lfsr/main.ml" 158 4498 4502 "ocaml_lfsr/main.ml" 158 4498 4510
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4096 "ocaml_lfsr/lfsr.ml" 142 4075 4097
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4098 "ocaml_lfsr/lfsr.ml" 142 4075 4099
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 343 13509 13509 "stdlib.mli" 343 13509 13555
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4100 "ocaml_lfsr/lfsr.ml" 142 4075 4101
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4095 "ocaml_lfsr/lfsr.ml" 142 4075 4102
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4086 "ocaml_lfsr/lfsr.ml" 142 4075 4102
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4107 "ocaml_lfsr/lfsr.ml" 142 4075 4110
+type(
+  int list
+)
+ident(
+  def sxp "ocaml_lfsr/lfsr.ml" 143 4154 4155 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4113 "ocaml_lfsr/lfsr.ml" 142 4075 4127
+type(
+  int list -> int list
+)
+ident(
+  int_ref Utils.binary_to_poly "ocaml_lfsr/utils.ml" 72 2160 2164 "ocaml_lfsr/utils.ml" 72 2160 2178
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4129 "ocaml_lfsr/lfsr.ml" 142 4075 4140
+type(
+  int -> int list
+)
+ident(
+  int_ref random_poly "ocaml_lfsr/lfsr.ml" 132 3761 3765 "ocaml_lfsr/lfsr.ml" 132 3761 3776
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4142 "ocaml_lfsr/lfsr.ml" 142 4075 4143
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4144 "ocaml_lfsr/lfsr.ml" 142 4075 4145
+type(
+  int -> int -> int
+)
+ident(
+  int_ref Stdlib.( - ) "stdlib.mli" 343 13509 13509 "stdlib.mli" 343 13509 13555
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4146 "ocaml_lfsr/lfsr.ml" 142 4075 4147
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4141 "ocaml_lfsr/lfsr.ml" 142 4075 4148
+type(
+  int
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4128 "ocaml_lfsr/lfsr.ml" 142 4075 4149
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4113 "ocaml_lfsr/lfsr.ml" 142 4075 4149
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4159 "ocaml_lfsr/lfsr.ml" 143 4154 4162
+type(
+  int list
+)
+ident(
+  def gxp "ocaml_lfsr/lfsr.ml" 144 4203 4204 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4165 "ocaml_lfsr/lfsr.ml" 143 4154 4173
+type(
+  int list -> int -> int list
+)
+ident(
+  int_ref Utils.moduloXn "ocaml_lfsr/utils.ml" 56 1694 1698 "ocaml_lfsr/utils.ml" 56 1694 1706
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4175 "ocaml_lfsr/lfsr.ml" 143 4154 4188
+type(
+  int list -> int list -> int list
+)
+ident(
+  int_ref Main.multKaratsuba "ocaml_lfsr/main.ml" 30 909 917 "ocaml_lfsr/main.ml" 30 909 930
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4189 "ocaml_lfsr/lfsr.ml" 143 4154 4192
+type(
+  int list
+)
+ident(
+  int_ref rxp "ocaml_lfsr/lfsr.ml" 142 4075 4080 "ocaml_lfsr/lfsr.ml" 142 4075 4083
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4193 "ocaml_lfsr/lfsr.ml" 143 4154 4196
+type(
+  int list
+)
+ident(
+  int_ref sxp "ocaml_lfsr/lfsr.ml" 142 4075 4107 "ocaml_lfsr/lfsr.ml" 142 4075 4110
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4174 "ocaml_lfsr/lfsr.ml" 143 4154 4197
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4198 "ocaml_lfsr/lfsr.ml" 143 4154 4199
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4165 "ocaml_lfsr/lfsr.ml" 143 4154 4199
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4207 "ocaml_lfsr/lfsr.ml" 144 4203 4210
+type(
+  int list
+)
+ident(
+  int_ref gxp "ocaml_lfsr/lfsr.ml" 143 4154 4159 "ocaml_lfsr/lfsr.ml" 143 4154 4162
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4211 "ocaml_lfsr/lfsr.ml" 144 4203 4212
+type(
+  int list -> int list -> bool
+)
+ident(
+  int_ref Stdlib.( = ) "stdlib.mli" 118 4976 4976 "stdlib.mli" 118 4976 5020
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4213 "ocaml_lfsr/lfsr.ml" 144 4203 4215
+type(
+  int list
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4207 "ocaml_lfsr/lfsr.ml" 144 4203 4215
+type(
+  bool
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4221 "ocaml_lfsr/lfsr.ml" 144 4203 4229
+type(
+  int -> lfsr
+)
+ident(
+  int_ref bon_lfsr "ocaml_lfsr/lfsr.ml" 141 4054 4062 "ocaml_lfsr/lfsr.ml" 141 4054 4070
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4230 "ocaml_lfsr/lfsr.ml" 144 4203 4231
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4221 "ocaml_lfsr/lfsr.ml" 144 4203 4231
+type(
+  lfsr
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4237 "ocaml_lfsr/lfsr.ml" 144 4203 4252
+type(
+  int * int list * int list -> lfsr
+)
+ident(
+  int_ref lfsr_from_lgxrx "ocaml_lfsr/lfsr.ml" 120 3242 3246 "ocaml_lfsr/lfsr.ml" 120 3242 3261
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4254 "ocaml_lfsr/lfsr.ml" 144 4203 4255
+type(
+  int
+)
+ident(
+  int_ref l "ocaml_lfsr/lfsr.ml" 141 4054 4071 "ocaml_lfsr/lfsr.ml" 141 4054 4072
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4257 "ocaml_lfsr/lfsr.ml" 144 4203 4260
+type(
+  int list
+)
+ident(
+  int_ref gxp "ocaml_lfsr/lfsr.ml" 143 4154 4159 "ocaml_lfsr/lfsr.ml" 143 4154 4162
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4262 "ocaml_lfsr/lfsr.ml" 144 4203 4265
+type(
+  int list
+)
+ident(
+  int_ref rxp "ocaml_lfsr/lfsr.ml" 142 4075 4080 "ocaml_lfsr/lfsr.ml" 142 4075 4083
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4253 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+type(
+  int * int list * int list
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4237 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+type(
+  lfsr
+)
+"ocaml_lfsr/lfsr.ml" 144 4203 4204 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+type(
+  lfsr
+)
+"ocaml_lfsr/lfsr.ml" 143 4154 4155 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+type(
+  lfsr
+)
+"ocaml_lfsr/lfsr.ml" 142 4075 4076 "ocaml_lfsr/lfsr.ml" 144 4203 4266
+type(
+  lfsr
+)
