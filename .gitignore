@@ -1,17 +1,5 @@
-git rm --cached lfsr.annot
-git rm --cached lfsr.cmi
-git rm --cached lfsr.cmo
-git rm --cached lfsr.mli
-git rm --cached main.annot
-git rm --cached main.cmi
-git rm --cached main.cmo
-git rm --cached main.mli
-git rm --cached test.annot
-git rm --cached test.cmi
-git rm --cached test.cmo
-git rm --cached test.mli
-git rm --cached utils.annot
-git rm --cached utils.cmi
-git rm --cached utils.cmo
-git rm --cached utils.mli
+*.cmo
+*.cmi
+*.annot
+*.mli
 
