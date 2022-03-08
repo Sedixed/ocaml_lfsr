@@ -158,15 +158,13 @@ let random_poly l =
 (* Génère un """""""bon""""""" LFSR de longueur l *)
 let rec bon_lfsr l =
 	let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly l) in
-	let () = Printf.printf "rxp : " in let () = List.iter (Printf.printf "%d ") rxp in
-	let () = Printf.printf "\n" in
-	let () = Printf.printf "sxp : " in let () = List.iter (Printf.printf "%d ") sxp in
-	let () = Printf.printf "\n" in
 	let gxp = moduloXn (multKaratsuba rxp sxp) l in
-	let () = Printf.printf "gxp : " in let () = List.iter (Printf.printf "%d ") (multKaratsuba rxp sxp) in
-	let () = Printf.printf "\n" in
-	let () = Printf.printf "gxp : " in let () = List.iter (Printf.printf "%d ") gxp in
-	let () = Printf.printf "\n" in
-	
 	if gxp = [] then bon_lfsr l else lfsr_from_lgxrx (l, gxp, rxp);;
-	
+
+(* Prototype only 
+let plaintext_coding lfsr text = ;;
+*)
+
+(* Prototype only 
+let plaintext_decoding lfsr text = ;;
+*)

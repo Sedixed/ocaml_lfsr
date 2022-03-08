@@ -51,53 +51,19 @@ let lgxrx2 = lgxrx_from_lfsr lfsr2;;
 lfsr_from_lgxrx lgxrx2;;
 
 (*
+display_n_value lfsr1 20;;
+display_n_value lfsr2 20;;
+*)
+
+(*
 let s = smallest_lgxrx lgxrx;;
 lfsr_from_lgxrx s;;
 *)
 
 let bl = bon_lfsr 6;;
-display_n_value bl 72;;
-
 (*
-lfsr_value lfsr1 0;;
-lfsr_value lfsr1 1;;
-lfsr_value lfsr1 2;;
-lfsr_value lfsr1 3;;
-lfsr_value lfsr1 4;;
-lfsr_value lfsr1 5;;
-lfsr_value lfsr1 6;;
-lfsr_value lfsr1 7;;
-lfsr_value lfsr1 8;;
-lfsr_value lfsr1 9;;
-lfsr_value lfsr1 10;;
-lfsr_value lfsr1 11;;
-lfsr_value lfsr1 12;;
-lfsr_value lfsr1 13;;
-lfsr_value lfsr1 14;;
-lfsr_value lfsr1 15;;
-lfsr_value lfsr1 16;;
-lfsr_value lfsr1 17;;
-lfsr_value lfsr1 18;;
-lfsr_value lfsr1 19;;
-Printf.printf "\n\n\n";;
-lfsr_value lfsr2 0;;
-lfsr_value lfsr2 1;;
-lfsr_value lfsr2 2;;
-lfsr_value lfsr2 3;;
-lfsr_value lfsr2 4;;
-lfsr_value lfsr2 5;;
-lfsr_value lfsr2 6;;
-lfsr_value lfsr2 7;;
-lfsr_value lfsr2 8;;
-lfsr_value lfsr2 9;;
-lfsr_value lfsr2 10;;
-lfsr_value lfsr2 11;;
-lfsr_value lfsr2 12;;
-lfsr_value lfsr2 13;;
-lfsr_value lfsr2 14;;
-lfsr_value lfsr2 15;;
-lfsr_value lfsr2 16;;
-lfsr_value lfsr2 17;;
-lfsr_value lfsr2 18;;
-lfsr_value lfsr2 19;;
+display_n_value bl 72;;
 *)
+
+
+
