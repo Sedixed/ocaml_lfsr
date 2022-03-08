@@ -56,6 +56,7 @@ lfsr_from_lgxrx s;;
 *)
 
 let bl = bon_lfsr 6;;
+display_n_value bl 72;;
 
 (*
 lfsr_value lfsr1 0;;

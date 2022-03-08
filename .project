@@ -26,6 +26,11 @@
 			<location>/usr/lib/ocaml/list.mli</location>
 		</link>
 		<link>
+			<name>External files/printf.mli</name>
+			<type>1</type>
+			<location>/usr/lib/ocaml/printf.mli</location>
+		</link>
+		<link>
 			<name>External files/random.mli</name>
 			<type>1</type>
 			<location>/usr/lib/ocaml/random.mli</location>

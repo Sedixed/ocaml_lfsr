@@ -31,7 +31,7 @@ let ( *! ) x y =
 exception NotSameLengthLists;;
 
 (* Calcul d'un r_i selon les valeurs de branchements d'un LFSR et d'un accumulateur contenant les valeurs *)
-(* nï¿½cessaires au calcul *)
+(* nécessaires au calcul *)
 let calc branch acc = 
 	let rec aux branch acc res = 
 		match branch, acc with
@@ -50,6 +50,24 @@ let lfsr_value lfsr n =
 			| i when i > n ->  r
 			| i -> let vi = calc lfsr.branch acc in aux n lfsr (List.rev (vi :: (List.rev (List.tl acc)))) vi (i + 1)
 		in aux n lfsr lfsr.base 0 lfsr.length;;
+
+(* Affiche les n premières valeurs générées par le LFSR lfsr *)
+let display_n_value lfsr n =
+	let () = Printf.printf "\n" in
+	let rec aux lfsr n = function
+		| i when i = n -> ()
+		| i -> let () = Printf.printf "r_%d = %d\n" i (lfsr_value lfsr i) in aux lfsr n (i + 1)
+	in aux lfsr n 0;;
+
+
+(* Affiche les n premières valeurs générées par le LFSR lfsr sous forme de blocs de longueur celle du LFSR *)
+(* afin de voir plus facilement la périodicité *)
+let display_n_value_debug lfsr n =
+	let () = Printf.printf "\n" in
+	let rec aux lfsr n = function
+		| i when i = n -> ()
+		| i -> let () = if i mod lfsr.length = 0 then Printf.printf "\n%2d   " i else Printf.printf "" in let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
+	in aux lfsr n 0;;
 
 
 (* Calcul de R(X) *)
@@ -108,7 +126,7 @@ let branch_calc lgxrx =
 	let rx = lgxrx_rx lgxrx in poly_to_binary rx (lgxrx_length lgxrx);;
 
 
-(* Calcul des valeurs initiales r0.. r_l-1 ï¿½ partir du triplet (l, G(X), R(X)) *)
+(* Calcul des valeurs initiales r0.. r_l-1 à partir du triplet (l, G(X), R(X)) *)
 let base_calc lgxrx =
 	let gx = (lgxrx_gx lgxrx) and rx = (lgxrx_rx lgxrx) in
 	let (a, b) = quotient gx rx and len = lgxrx_length lgxrx in
@@ -116,7 +134,7 @@ let base_calc lgxrx =
 	poly_to_binary s (lgxrx_length lgxrx);;
 	
 	
-(* Calcul d'un LFSR ï¿½ partir d'un triplet (l, G(X), R(X)) *)
+(* Calcul d'un LFSR à partir d'un triplet (l, G(X), R(X)) *)
 let lfsr_from_lgxrx lgxrx = {length=(lgxrx_length lgxrx); base=(base_calc lgxrx); branch=(branch_calc lgxrx)};;
 
 
@@ -128,7 +146,7 @@ let smallest_lgxrx lgxrx =
 	((degree q2) + 1, q1, q2);;
 
 
-(* Gï¿½nï¿½re un polynï¿½me pseudo-alï¿½atoire sous forme de liste binaire de longueur l *)
+(* Génère un polynôme pseudo-aléatoire sous forme de liste binaire de longueur l *)
 let random_poly l = 
 	let rec aux acc l = function
 		| i when i = l -> List.rev acc
@@ -136,10 +154,19 @@ let random_poly l =
 	in aux [] l 0;;
 
 
-(* revoir complexitï¿½ *)
-(* Gï¿½nï¿½re un """""""bon""""""" LFSR de longueur l *)
+(* revoir complexité *)
+(* Génère un """""""bon""""""" LFSR de longueur l *)
 let rec bon_lfsr l =
-	let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly (l - 1)) in 
+	let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly l) in
+	let () = Printf.printf "rxp : " in let () = List.iter (Printf.printf "%d ") rxp in
+	let () = Printf.printf "\n" in
+	let () = Printf.printf "sxp : " in let () = List.iter (Printf.printf "%d ") sxp in
+	let () = Printf.printf "\n" in
 	let gxp = moduloXn (multKaratsuba rxp sxp) l in
+	let () = Printf.printf "gxp : " in let () = List.iter (Printf.printf "%d ") (multKaratsuba rxp sxp) in
+	let () = Printf.printf "\n" in
+	let () = Printf.printf "gxp : " in let () = List.iter (Printf.printf "%d ") gxp in
+	let () = Printf.printf "\n" in
+	
 	if gxp = [] then bon_lfsr l else lfsr_from_lgxrx (l, gxp, rxp);;
 	
