@@ -100,42 +100,32 @@ let ordre p =
 		in aux 1 p;;
 
 
-(* Calcule le prochain polynôme à tester dans la fonction est_irreductible *)
-let next_poly bd = function
-	| p when List.length p = bd -> []
-	| p when List.length p = List.hd (List.rev p) + 1 -> [List.hd (List.rev p) + 1]
-	| h :: [] as p -> 0 :: p
-	| h :: t as p when h = (List.hd t) - 1 -> 0 :: p
-	| h :: t -> (h + 1) :: t
-	| _ -> [];;
-
-
 (* Applique la somme avec le monôme x à tous les éléments de list *)
 let apply_sum list x =
-	let rec aux acc x = function
-		| [] -> List.rev acc
-		| h :: t -> aux ((sum_poly x h) :: acc) x t
-	in aux [] x list;;
+  let rec aux acc x = function
+    | [] -> List.rev acc
+    | h :: t -> aux ((sum_poly x h) :: acc) x t
+  in aux [] x list;;
 
 
 (* Renvoie la liste de tous les polynômes de degré inférieur à n *)
 let all_poly_below n =
-	let rec aux acc n = function
-	| i when i = 0 -> aux ([0] :: acc) n (i + 1)
-	| i when i = 1 -> aux (([1] :: ([0;1] :: acc))) n (i + 1)
-	| i when i = n -> List.rev acc
-	| i -> let e = [i] in let newlist = apply_sum acc e in aux (acc @ newlist) n (i + 1)
-	in aux [] n 0;;
+  let rec aux acc n = function
+    | i when i = 0 -> aux ([0] :: acc) n (i + 1)
+    | i when i = 1 -> aux (([1] :: ([0;1] :: acc))) n (i + 1)
+    | i when i = n -> List.rev acc
+    | i -> let e = [i] in let newlist = apply_sum acc e in aux (acc @ newlist) n (i + 1)
+  in aux [] n 0;;
 
 
 (* Retourne true ssi le polynôme p est irréductible *)
 let est_irreductible p =
-	if (degree p) = 1 then true else
-	let rec aux p = function
-		| [] -> true
-		| h :: t -> let pgcd = euclide h p in 
-				if pgcd <> [0] then false else aux p t
-	in aux p (all_poly_below (degree p));;
+  if (degree p) = 1 then true else
+    let rec aux p = function
+      | [] -> true
+      | h :: t -> let pgcd = euclide h p in 
+          if pgcd <> [0] then false else aux p t
+    in aux p (all_poly_below (degree p));;
 
 
 exception InvalidDegree;;
