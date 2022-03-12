@@ -52,11 +52,18 @@ let lfsr_value lfsr n =
     in aux n lfsr lfsr.base 0 lfsr.length;;
 
 (* Affiche les n premières valeurs générées par le LFSR lfsr *)
-let display_n_value lfsr n =
+let display_n_value_col lfsr n =
   let () = Printf.printf "\n" in
   let rec aux lfsr n = function
     | i when i = n -> ()
     | i -> let () = Printf.printf "r_%d = %d\n" i (lfsr_value lfsr i) in aux lfsr n (i + 1)
+  in aux lfsr n 0;;
+
+let display_n_value_row lfsr n =
+  let () = Printf.printf "\n" in
+  let rec aux lfsr n = function
+    | i when i = n -> Printf.printf "\n"
+    | i -> let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
   in aux lfsr n 0;;
 
 
@@ -145,12 +152,13 @@ let lfsr_from_lgxrx lgxrx = {length=(lgxrx_length lgxrx); base=(base_calc lgxrx)
 let smallest_lgxrx lgxrx =
 	if (lgxrx_gx lgxrx) = (lgxrx_rx lgxrx) then lgxrx else
   let tx = euclide (lgxrx_gx lgxrx) (lgxrx_rx lgxrx) in
+	(* pgcd = 1 -> pas de modif *)
 	if tx = [0] then lgxrx else
   let (q1, r1) = quotient (lgxrx_gx lgxrx) tx and (q2, r2) = quotient (lgxrx_rx lgxrx) tx in
 	let () = Printf.printf "rx : " in
 	let () = List.iter (Printf.printf "%d ") (lgxrx_rx lgxrx) in let () = Printf.printf "\nq2 : " in 
 	let () = List.iter (Printf.printf "%d ") q2 in let () = Printf.printf "\ntx : " in
-	let () = List.iter (Printf.printf "%d ") tx in let () = Printf.printf "\n" in 
+	let () = List.iter (Printf.printf "%d ") tx in let () = Printf.printf "\n" in
   ((degree q2), q1, q2);;
 
 
@@ -198,25 +206,26 @@ let ciphertext_decoding base_seq =
   else
     let r0 = [len] and r1 = binary_to_poly base_seq and
 		(* [] <=> 0, [0] <=> 1 *)
-    a0 = [0] and a1 = [] and b0 = [] and b1 = [0] in
-    let rec aux rk rk_minus am1 am2 bm1 bm2 qm = 
-      let (q, r) = quotient rk_minus rk in 
+    b0 = [] and b1 = [0] in
+    let rec aux i rk1 rk2 bm1 bm2 qbase =
+      let (q, r) = quotient rk2 rk1 in
       if r = [] then
-        (bm1, rk) (* peut être pas rk mais rk_m / rk et peutêtre bm1 *)
+        ((i - 1), (if (i - 1) < (len / 2) then bm1 else bm2), rk2)
       else 
-        let am = sum_poly am2 (multKaratsuba am1 qm)
-				and bm = sum_poly bm2 (multKaratsuba bm1 qm)
-        in aux r rk am am1 bm bm1 q 
-    in let (bm, rm) = aux r0 r1 a0 a1 b0 b1 (* jsp quoi mettre comme q de base donc [0] *) [0] in
-		let d = max (degree bm) ((degree rm) + 1) in let rxtmp = renverse bm d in
-		let rx = if List.hd rxtmp = 0 then rxtmp else 0 :: rxtmp in
-		let gx = multKaratsuba rx (binary_to_poly base_seq) in 
-		(smallest_lfsr (lfsr_from_lgxrx (len, gx, rx)),
-		lfsr_from_lgxrx (len, gx, rx));;
+				let bm = sum_poly bm2 (multKaratsuba bm1 q) in
+
+        if qbase = [-1] then aux (i + 1) r rk1 bm1 bm2 q else aux (i + 1) r rk1 bm bm1 q
+		(* qbase = [-1] -> premier calcul donc pas de calcul de a_i et b_i *)
+    in let (i, bm, rm) = aux 1 r0 r1 b1 b0 [-1] in
+		let d = max (degree bm) ((degree rm) + 1) in let rx = renverse bm d in
+		let gx = multKaratsuba rx (binary_to_poly base_seq) in
+		let () = Printf.printf "m = %d\n" i in 
+		let () = Printf.printf "gx : "; List.iter (Printf.printf "%d ") gx; Printf.printf "\n"; in
+		let () = Printf.printf "rx : "; List.iter (Printf.printf "%d ") rx; Printf.printf "\n"; in 
+		lfsr_from_lgxrx (d, gx, rx);;
 
 
 (* todo : revoir ciphertext, smallest *)
-
 
 
 

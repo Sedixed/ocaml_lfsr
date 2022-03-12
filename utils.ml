@@ -85,4 +85,3 @@ let poly_to_binary base len =
     | _ -> failwith "Impossible"
   in aux [] 0 len base;;
 
-

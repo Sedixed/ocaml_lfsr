@@ -59,8 +59,8 @@ lfsr_from_lgxrx lgxrx2;;
 
 (* Affichage des 20 premières valeurs des 2 LFSR *)
 (*
-display_n_value lfsr1 20;;
-display_n_value lfsr2 20;;
+display_n_value_row lfsr1 20;;
+display_n_value_row lfsr2 20;;
 *)
 
 (* LFSR minimal *)
@@ -70,16 +70,29 @@ lfsr_from_lgxrx (smallest_lgxrx lgxrx);;
 let bl = bon_lfsr 8;; 
 
 (* Chiffrement / déchiffrement *)
-let text = random_poly ((twoPowN 8) + 5) ;;
+(*
+let text = random_poly ((twoPowN 4) + 5) ;;
 let encoded = plaintext_coding bl text;;
 let decoded = plaintext_decoding bl encoded;;
 text = decoded;;
-
-let rd = (random_poly 10);;
-let (lfsr_r, lfsr_notr) = ciphertext_decoding rd;;
+*)
 
 
-display_n_value lfsr_r 10;;
+let list_values lfsr n =
+  let () = Printf.printf "\n" in
+  let rec aux acc lfsr n = function
+    | i when i = n -> List.rev acc
+    | i -> let v = (lfsr_value lfsr i) in aux (v :: acc) lfsr n (i + 1)
+  in aux [] lfsr n 0;;
+
+
+let rd1 = (random_poly 10);;
+
+let lfsr = ciphertext_decoding rd1;;
+
+rd1;;
+let d = list_values lfsr 10;;
+d = rd1;;
 
 
 
