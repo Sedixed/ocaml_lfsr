@@ -1,6 +1,20 @@
 open Utils;;
 
-(* Somme de 2 polynômes p1 et p2 à coefficients dans F2 *)
+
+(* Exception utilisée si le degré passé en argument d'une fonction est invalide *)
+exception InvalidDegree;;
+
+(* Exception utilisée en cas de division par le polynôme nul (liste vide) *)
+exception DivisionByNullPolynom;;
+
+(* Exception utilisée en cas de polynôme ne vérifiant pas les préconditions *)
+(* pour le calcul de son ordre, cette exception prime sur l'exception InvalidDegree *)
+exception InvalidPolynomForOrder;;
+
+(* Exception utilisée si jamais le polynôme que l'on souhaite générer n'existe pas *)
+exception NonExistentPolynom;;
+
+(* Somme de 2 polynômes p1 et p2 à coefficient dans F2 *)
 let sum_poly p1 p2 =
 	let max = let d1 = degree p1 and d2 = degree p2 in if d1 < d2 then d2 else d1 in
 	let rec sum_aux p1 p2 aux i max =
@@ -16,7 +30,7 @@ let sum_poly p1 p2 =
 	in sum_aux p1 p2 [] 0 max;;
 
 
-(* Multiplication naïve de 2 polynômes p et q à coefficients dans F2 *)
+(* Multiplication naïve de 2 polynômes p et q à coefficient dans F2 *)
 let multNaive p q =
 	let rec multNaive_aux p q aux =
 		match p, q with
@@ -26,7 +40,7 @@ let multNaive p q =
 	in multNaive_aux p q [];;
 
 
-(* Multiplication rapide de 2 polynômes p et q à coefficients dans F2 *)
+(* Multiplication rapide de 2 polynômes p et q à coefficient dans F2 *)
 let rec multKaratsuba p q =
 	if (max (degree p) (degree q)) < 5 then 
 		multNaive p q 
@@ -39,7 +53,7 @@ let rec multKaratsuba p q =
 			sum_poly c0 (sum_poly (multXn c1 (k / 2)) (multXn c2 k));;
 
 
-(* Inverse de p mod X^n *)
+(* Inverse de p modulo X^n *)
 let inverse_mod p n =
 	let rec inv_aux n acc p i =
 		if i > int_log2 n then
@@ -53,11 +67,7 @@ let inverse_mod p n =
 	in inv_aux n [0] p 1;;
 
 
-(* Exception utilisée en cas de division par le polynôme nul (liste vide) *)
-exception DivisionByNullPolynom;;
-
-
-(* Quotient rapide du polynôme a par le polynôme b, tous deux à coefficients dans F2 *)
+(* Quotient rapide du polynôme a par le polynôme b, tous deux à coefficient dans F2 *)
 let quotient a b =
 	if b = [] then 
 		raise DivisionByNullPolynom 
@@ -75,7 +85,7 @@ let quotient a b =
 		in (q, (sum_poly a (mult_coeff (multKaratsuba b q) (-1))));;
 
 
-(* Algorithme d'euclide sur les polynômes de F2 *)
+(* Algorithme d'euclide sur les polynômes à coefficient dans F2 *)
 let rec euclide p q =
 	if q = [] then 
 		p
@@ -83,13 +93,11 @@ let rec euclide p q =
 		let (q1, r1) = quotient p q in
 		euclide q r1;;
 
-exception InvalidPolynom;;
-
 
 (* Renvoie l'ordre du polynôme p *)
 let ordre p =
 	if p = [] || List.hd p <> 0 || (degree p) < 2 then
-		raise InvalidPolynom
+		raise InvalidPolynomForOrder
 	else
 		let rec aux order p =
 			let (q, r) = quotient [order] p in
@@ -101,6 +109,7 @@ let ordre p =
 
 
 (* Applique la somme avec le monôme x à tous les éléments de list *)
+(* Fonction utilisée dans la fonction all_poly_below *)
 let apply_sum list x =
   let rec aux acc x = function
     | [] -> List.rev acc
@@ -111,9 +120,9 @@ let apply_sum list x =
 (* Renvoie la liste de tous les polynômes de degré inférieur à n *)
 let all_poly_below n =
   let rec aux acc n = function
+		| i when i = n -> List.rev acc
     | i when i = 0 -> aux ([0] :: acc) n (i + 1)
     | i when i = 1 -> aux (([1] :: ([0;1] :: acc))) n (i + 1)
-    | i when i = n -> List.rev acc
     | i -> let e = [i] in let newlist = apply_sum acc e in aux (acc @ newlist) n (i + 1)
   in aux [] n 0;;
 
@@ -123,12 +132,16 @@ let est_irreductible p =
   if (degree p) = 1 then true else
     let rec aux p = function
       | [] -> true
-      | h :: t -> let pgcd = euclide h p in 
-          if pgcd <> [0] then false else aux p t
+      | h :: t -> if h = [0] then 
+										aux p t 
+									else 
+										let (q, r) = quotient p h in
+          					if r = [] then 
+											false 
+										else 
+											aux p t
     in aux p (all_poly_below (degree p));;
 
-
-exception InvalidDegree;;
 
 (* Génère un polynôme irréductible de degré n *)		
 let irreductible n =
@@ -136,7 +149,7 @@ let irreductible n =
 		raise InvalidDegree
 	else
 		let rec aux n = function
-			| [] -> failwith "Polynôme non existant"
+			| [] -> raise NonExistentPolynom
 			| h :: t -> if (degree h) < n || not (est_irreductible h) then
 							aux n t
 						else
@@ -150,16 +163,12 @@ let primitif n =
 		raise InvalidDegree
 	else
 		let rec aux n = function
-			| [] -> failwith "Polynôme non existant"
+			| [] -> raise NonExistentPolynom
 			| h :: t -> if (degree h) < n || not (est_irreductible h) || not (ordre h = (twoPowN n) - 1) then
 										aux n t
 									else
 										h
 		in aux n (all_poly_below (n + 1));;
-
-
-
-
 
 
 	

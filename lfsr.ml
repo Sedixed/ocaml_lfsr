@@ -1,11 +1,17 @@
 open Utils;;
-open Main;;
+open Polynom;;
 
-(* length : longueur du LFSR *)
-(* base : valeurs r0, r1, .., r(length - 1) *)
-(* branch : valeurs des branchements a1, a2, .., a(length) *)
 
-(* r0, r1, r2, ..r(length -1) *)
+(* Exception utilisée lorsque deux listes ne sont pas de même longueur *)
+exception NotSameLengthLists;;
+
+(* Exception utilisée lorsqu'une liste est vide *)
+exception EmptyList;;
+
+(* Exception utilisée lorsqu'un entier est impair : utilisé dans la fonction de *)
+(* calcul du plus petit LFSR générant une suite commençant avec une séquence de valeurs. *)
+exception InvalidParity;;
+
 
 type lfsr = {
 	length : int;
@@ -28,8 +34,6 @@ let ( *! ) x y =
 	| _ -> 0;;
 
 
-exception NotSameLengthLists;;
-
 (* Calcul d'un r_i selon les valeurs de branchements d'un LFSR et d'un accumulateur contenant les valeurs *)
 (* nécessaires au calcul *)
 let calc branch acc = 
@@ -50,31 +54,6 @@ let lfsr_value lfsr n =
       | i when i > n ->  r
       | i -> let vi = calc lfsr.branch acc in aux n lfsr (List.rev (vi :: (List.rev (List.tl acc)))) vi (i + 1)
     in aux n lfsr lfsr.base 0 lfsr.length;;
-
-(* Affiche les n premières valeurs générées par le LFSR lfsr *)
-let display_n_value_col lfsr n =
-  let () = Printf.printf "\n" in
-  let rec aux lfsr n = function
-    | i when i = n -> ()
-    | i -> let () = Printf.printf "r_%d = %d\n" i (lfsr_value lfsr i) in aux lfsr n (i + 1)
-  in aux lfsr n 0;;
-
-let display_n_value_row lfsr n =
-  let () = Printf.printf "\n" in
-  let rec aux lfsr n = function
-    | i when i = n -> Printf.printf "\n"
-    | i -> let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
-  in aux lfsr n 0;;
-
-
-(* Affiche les n premières valeurs générées par le LFSR lfsr sous forme de blocs de longueur celle du LFSR *)
-(* afin de voir plus facilement la périodicité *)
-let display_n_value_debug lfsr n =
-  let () = Printf.printf "\n" in
-  let rec aux lfsr n = function
-    | i when i = n -> ()
-    | i -> let () = if i mod lfsr.length = 0 then Printf.printf "\n%2d   " i else Printf.printf "" in let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
-  in aux lfsr n 0;; 
 
 
 (* Calcul de R(X) *)
@@ -131,8 +110,11 @@ let lgxrx_rx (l, gx, rx) = rx;;
 
 (* Calcul des valeurs de branchement à partir du triplet (l, G(X), R(X)) *)
 let branch_calc lgxrx =
-	if (lgxrx_rx lgxrx) = [] then failwith "liste vide" else 
-  let rx = List.tl (lgxrx_rx lgxrx) in List.tl (poly_to_binary rx (lgxrx_length lgxrx + 1));;
+	if (lgxrx_rx lgxrx) = [] then 
+		raise EmptyList 
+	else 
+  	let rx = List.tl (lgxrx_rx lgxrx) in 
+		List.tl (poly_to_binary rx (lgxrx_length lgxrx + 1));;
 
 
 (* Calcul des valeurs initiales r0.. r_l-1 à partir du triplet (l, G(X), R(X)) *)
@@ -148,18 +130,14 @@ let lfsr_from_lgxrx lgxrx = {length=(lgxrx_length lgxrx); base=(base_calc lgxrx)
 
 
 (* Produit le triplet (l, G(X), R(X)) minimal à partir du triplet lgxrx *)
-(* à revoir : degré à vérifier *)
 let smallest_lgxrx lgxrx =
-	if (lgxrx_gx lgxrx) = (lgxrx_rx lgxrx) then lgxrx else
   let tx = euclide (lgxrx_gx lgxrx) (lgxrx_rx lgxrx) in
-	(* pgcd = 1 -> pas de modif *)
-	if tx = [0] then lgxrx else
-  let (q1, r1) = quotient (lgxrx_gx lgxrx) tx and (q2, r2) = quotient (lgxrx_rx lgxrx) tx in
-	let () = Printf.printf "rx : " in
-	let () = List.iter (Printf.printf "%d ") (lgxrx_rx lgxrx) in let () = Printf.printf "\nq2 : " in 
-	let () = List.iter (Printf.printf "%d ") q2 in let () = Printf.printf "\ntx : " in
-	let () = List.iter (Printf.printf "%d ") tx in let () = Printf.printf "\n" in
-  ((degree q2), q1, q2);;
+	if tx = [0] then 
+		lgxrx 
+	else
+  	let (q1, r1) = quotient (lgxrx_gx lgxrx) tx and (q2, r2) = quotient (lgxrx_rx lgxrx) tx in
+		let d = max ((degree q1) + 1) (degree q2) in
+  	(d, q1, q2);;
 
 
 (* Produit le LFSR minimal à partir du LFSR lfsr *)
@@ -183,7 +161,7 @@ let rec bon_lfsr l =
   if gxp = [] then bon_lfsr l else lfsr_from_lgxrx (l, gxp, rxp);; 
 
 
-(* pas sûr du mod lfsr.length, ni du fonctionnement de la base *)
+(* Fonction de chiffrement de text à l'aide du LFSR lfsr *)
 let plaintext_coding lfsr text =
   let rec aux acc lfsr i base = function
     | [] -> List.rev acc
@@ -193,39 +171,71 @@ let plaintext_coding lfsr text =
   in aux [] lfsr 0 lfsr.base text;;
 
 
-(* même fonction car même fonctionnement MDR *)
+(* Fonction de déchiffrement de text à l'aide du LFSR lfsr *)
 let plaintext_decoding lfsr text = plaintext_coding lfsr text;;
 
+let debug text list =
+	Printf.printf "%s : " text; List.iter (Printf.printf "%d ") list; Printf.printf "\n";;
 
-(* todo : remplacer failwith par une exception *)
-(* revoir l'algo comme dans le cahier *)
+
 let ciphertext_decoding base_seq =
-  let len = (List.length base_seq) in
+	let len = (List.length base_seq) in
   if len mod 2 <> 0 then 
-    failwith "Nombre impair : 2*l pas possible" 
+    raise InvalidParity
   else
     let r0 = [len] and r1 = binary_to_poly base_seq and
-		(* [] <=> 0, [0] <=> 1 *)
     b0 = [] and b1 = [0] in
-    let rec aux i rk1 rk2 bm1 bm2 qbase =
-      let (q, r) = quotient rk2 rk1 in
-      if r = [] then
-        ((i - 1), (if (i - 1) < (len / 2) then bm1 else bm2), rk2)
-      else 
-				let bm = sum_poly bm2 (multKaratsuba bm1 q) in
-
-        if qbase = [-1] then aux (i + 1) r rk1 bm1 bm2 q else aux (i + 1) r rk1 bm bm1 q
-		(* qbase = [-1] -> premier calcul donc pas de calcul de a_i et b_i *)
-    in let (i, bm, rm) = aux 1 r0 r1 b1 b0 [-1] in
+		
+		let rec aux i ri ri1 bi bi1 q1 =
+			match i with
+			| 0 -> aux (i + 1) ri ri1 bi bi1 q1
+			| 1 -> if (degree ri) < len / 2 then (bi, ri) else let (q, r) = quotient ri1 ri in aux (i + 1) r ri bi bi1 q
+			| i -> let b = sum_poly bi1 (multKaratsuba bi q1) and (q, r) = quotient ri1 ri in
+								debug "b" b;
+								if (degree ri) < len / 2 then
+									(b, ri)
+								else
+									aux (i + 1) r ri b bi q
+								
+		in let (bm, rm) = aux 0 r1 r0 b1 b0 [] in
 		let d = max (degree bm) ((degree rm) + 1) in let rx = renverse bm d in
 		let gx = multKaratsuba rx (binary_to_poly base_seq) in
-		let () = Printf.printf "m = %d\n" i in 
-		let () = Printf.printf "gx : "; List.iter (Printf.printf "%d ") gx; Printf.printf "\n"; in
-		let () = Printf.printf "rx : "; List.iter (Printf.printf "%d ") rx; Printf.printf "\n"; in 
-		lfsr_from_lgxrx (d, gx, rx);;
+		debug "rx" rx;
+		debug "gx" gx;
+		lfsr_from_lgxrx ((degree rx), gx, rx);;
+	
+
+(* ---------- Fonctions d'affichage ---------- *)
 
 
-(* todo : revoir ciphertext, smallest *)
+(* Affiche les n premières valeurs générées par le LFSR lfsr en une colonne, *)
+(* au format "r_i = v" avec v la valeur produite *)
+let display_n_value_col lfsr n =
+  let () = Printf.printf "\n" in
+  let rec aux lfsr n = function
+    | i when i = n -> ()
+    | i -> let () = Printf.printf "r_%d = %d\n" i (lfsr_value lfsr i) in aux lfsr n (i + 1)
+  in aux lfsr n 0;;
+
+
+(* Affiche les n premières valeurs générées par le LFSR lfsr en une ligne, *)
+(* au format "v1 v2 ... v_n" avec v1.._v_n les valeurs produites *)
+let display_n_value_row lfsr n =
+  let () = Printf.printf "\n" in
+  let rec aux lfsr n = function
+    | i when i = n -> Printf.printf "\n"
+    | i -> let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
+  in aux lfsr n 0;;
+
+
+(* Affiche les n premières valeurs générées par le LFSR lfsr sous forme de blocs de longueur celle du LFSR *)
+(* afin de voir plus facilement la périodicité *)
+let display_n_value_debug lfsr n =
+  let () = Printf.printf "\n" in
+  let rec aux lfsr n = function
+    | i when i = n -> ()
+    | i -> let () = if i mod lfsr.length = 0 then Printf.printf "\n%2d   " i else Printf.printf "" in let () = Printf.printf "%d " (lfsr_value lfsr i) in aux lfsr n (i + 1)
+  in aux lfsr n 0;; 
 
 
 

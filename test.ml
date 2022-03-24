@@ -1,4 +1,4 @@
-open Main;;
+open Polynom;;
 open Utils;;
 open Lfsr;;
 
@@ -86,12 +86,12 @@ let list_values lfsr n =
   in aux [] lfsr n 0;;
 
 
-let rd1 = (random_poly 10);;
+let rd1 = (random_poly 8);;
 
 let lfsr = ciphertext_decoding rd1;;
 
 rd1;;
-let d = list_values lfsr 10;;
+let d = list_values lfsr 8;;
 d = rd1;;
 
 

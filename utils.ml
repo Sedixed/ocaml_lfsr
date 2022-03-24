@@ -1,14 +1,9 @@
-(* On définit le type f2poly comme le type représentant les polynômes *)
-(* à coefficients dans F2. Nous utiliserons la représentation creuse, et les *)
-(* valeurs contenues dans la liste représentent les degrés où le coefficient vaut 1. *)
-(* Ces valeurs sont rangées par ordre croissant selon le degré.*)
-(* Par exemple, le polynôme 1 + X + X³ sera représenté de cette façon :*)
-(* [0; 1; 3] *)
-
+(* Type utilisé pour représenter les polynômes à coefficient dans F2 *)
 type f2poly = int list;;
 
 
 (* Renvoie le degré du polynôme p à coefficients dans F2, -1 si la liste est vide. *)
+(* Nous renvoyons ici -1 car neg_infinity est de type float *)
 let degree p = if p = [] then -1 else List.hd (List.rev p);;
 
 
@@ -68,7 +63,7 @@ let twoPowN n = int_of_float (2. ** float_of_int n);;
 let int_log2 n = int_of_float (Float.ceil (Float.log (float_of_int n) /. Float.log 2.));;
 
 
-(* Convertit une liste de 0 et de 1 en le polynôme correspondant *)
+(* Convertit une liste binaire en le polynôme correspondant *)
 let binary_to_poly l = 
   let rec aux acc i = function
     | [] -> List.rev acc
@@ -76,12 +71,12 @@ let binary_to_poly l =
   in aux [] 0 l;;
 
 
-(* Convertit un polynôme en la liste de 0 et de 1 correspondante *)
+(* Convertit un polynôme en la liste binaire correspondante *)
 let poly_to_binary base len =
   let rec aux acc i l = function
     | list when i = l -> List.rev acc
     | [] as list when i < l -> aux (0 :: acc) (i + 1) l list
     | h :: t as list -> if h <> i then aux (0 :: acc) (i + 1) l list else aux (1 :: acc) (i + 1) l t
-    | _ -> failwith "Impossible"
+    | _ -> failwith "Le polynôme utilisé est invalide"
   in aux [] 0 len base;;
 
