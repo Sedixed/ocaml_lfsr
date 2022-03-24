@@ -153,7 +153,6 @@ let random_poly l =
   in aux [] l 0;;
 
 
-(* revoir complexité *)
 (* Génère un bon LFSR de longueur l *)
 let rec bon_lfsr l =
   let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly l) in
