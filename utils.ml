@@ -55,7 +55,7 @@ let moduloXn p n =
 	in mod_aux n [] p;;
 
 
-(* Renvoie 2^n *)
+(* Renvoie 2^n : procédé non-dichotomique car réalisé pour n petit *)
 let twoPowN n = int_of_float (2. ** float_of_int n);;
 
 

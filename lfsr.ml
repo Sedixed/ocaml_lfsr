@@ -1,5 +1,5 @@
 open Utils;;
-open Polynom;;
+open Main;;
 
 
 (* Exception utilisée lorsque deux listes ne sont pas de même longueur *)
@@ -153,6 +153,7 @@ let random_poly l =
   in aux [] l 0;;
 
 
+(* revoir complexité *)
 (* Génère un bon LFSR de longueur l *)
 let rec bon_lfsr l =
   let rxp = primitif (l - 1) and sxp = binary_to_poly (random_poly l) in
@@ -173,24 +174,20 @@ let plaintext_coding lfsr text =
 (* Fonction de déchiffrement de text à l'aide du LFSR lfsr *)
 let plaintext_decoding lfsr text = plaintext_coding lfsr text;;
 
-let debug text list =
-	Printf.printf "%s : " text; List.iter (Printf.printf "%d ") list; Printf.printf "\n";;
 
-
-let ciphertext_decoding base_seq =
+(* Calcul du plus petit LFSR générant une suite commençant par les valeurs contenues dans base_seq *)
+let ciphertext_attack base_seq =
 	let len = (List.length base_seq) in
   if len mod 2 <> 0 then 
     raise InvalidParity
   else
     let r0 = [len] and r1 = binary_to_poly base_seq and
     b0 = [] and b1 = [0] in
-		
 		let rec aux i ri ri1 bi bi1 q1 =
 			match i with
 			| 0 -> aux (i + 1) ri ri1 bi bi1 q1
 			| 1 -> if (degree ri) < len / 2 then (bi, ri) else let (q, r) = quotient ri1 ri in aux (i + 1) r ri bi bi1 q
 			| i -> let b = sum_poly bi1 (multKaratsuba bi q1) and (q, r) = quotient ri1 ri in
-								debug "b" b;
 								if (degree ri) < len / 2 then
 									(b, ri)
 								else
@@ -199,8 +196,6 @@ let ciphertext_decoding base_seq =
 		in let (bm, rm) = aux 0 r1 r0 b1 b0 [] in
 		let d = max (degree bm) ((degree rm) + 1) in let rx = renverse bm d in
 		let gx = multKaratsuba rx (binary_to_poly base_seq) in
-		debug "rx" rx;
-		debug "gx" gx;
 		lfsr_from_lgxrx ((degree rx), gx, rx);;
 	
 

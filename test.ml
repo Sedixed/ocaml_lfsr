@@ -57,11 +57,10 @@ let lfsr2 = {length=3; base= [1;0;0]; branch=[0;0;1]};;
 let lgxrx2 = lgxrx_from_lfsr lfsr2;;
 lfsr_from_lgxrx lgxrx2;;
 
+
 (* Affichage des 20 premières valeurs des 2 LFSR *)
-(*
 display_n_value_row lfsr1 20;;
 display_n_value_row lfsr2 20;;
-*)
 
 (* LFSR minimal *)
 lfsr_from_lgxrx (smallest_lgxrx lgxrx);;
@@ -70,14 +69,14 @@ lfsr_from_lgxrx (smallest_lgxrx lgxrx);;
 let bl = bon_lfsr 8;; 
 
 (* Chiffrement / déchiffrement *)
-(*
 let text = random_poly ((twoPowN 4) + 5) ;;
 let encoded = plaintext_coding bl text;;
 let decoded = plaintext_decoding bl encoded;;
 text = decoded;;
-*)
 
 
+(* Renvoie la séquence de valeurs produite par le LFSR lfsr de 0 à n non compris *)
+(* Fonction utilisée uniquement ici *)
 let list_values lfsr n =
   let () = Printf.printf "\n" in
   let rec aux acc lfsr n = function
@@ -86,14 +85,15 @@ let list_values lfsr n =
   in aux [] lfsr n 0;;
 
 
-let rd1 = (random_poly 8);;
+let rand = (random_poly 8);;
 
-let lfsr = ciphertext_decoding rd1;;
+let lfsr = ciphertext_attack rand;;
 
-rd1;;
-let d = list_values lfsr 8;;
-d = rd1;;
-
+(* Affichage des valeurs *)
+rand;;
+list_values lfsr 8;;
+(* Test d'égalité *)
+rand = (list_values lfsr 8);;
 
 
 
